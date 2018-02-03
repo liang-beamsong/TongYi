@@ -1,0 +1,274 @@
+﻿@media(max-width: 1440px){
+  .other-nav a{ font-size: 14px; }
+  .fb_banner .fb_map { width: 32.9685%; right: 12.08%; top: 21%; }
+}
+@media(max-width: 1439px) and (min-width: 1025px) {
+  .fb_banner .fb_map { width: 32.9685%; right: 12.08%; top: 27%; }
+} 
+@media (max-width: 1200px){
+  .xq_zp_table tr td a img{ margin-left: 28px; }
+}
+@media(max-width: 1024px){
+  .xqxq_zp .xq_zp{ display: none; }
+  .xq_zp_phone{ display: block; }
+  .xq_zp_phone .div1 { padding: 7px 20px 37px; border:1px solid #ececec; font-size: 20px; color: #828181; margin-bottom: 18px;  }
+  .xq_zp_phone .div1 span{ font-family: Arial; color: #b5b5b5; }
+  .xq_zp_phone .div1:last-child{ margin-bottom: 90px; }
+  .xq_zp_table2 b a{ font-size: 26px; color: #000; }
+  .xq_zp_table2 tr{ line-height: 80px; }
+  .xq_zp_table2 tr:last-child{ line-height: 24px; }
+  .xq_zp_table2 bdo{ margin:0 20px;}
+  .xq_zp_table2 a img{ display: inline-block; width: 14px; height: 26px; }
+
+
+  .jt_teacher { background-position: left center; text-align: center;}
+  .hog_teacher { background-position: left center; text-align: center;}
+  .nrxq_main2 span { width: 100%; }
+  .c_fx{ display: none; }
+  .fb_map { display: none; }
+  .In_vadio{ display:none;}
+  body{ overflow: visible !important; overflow-x: hidden !important;}
+
+
+  .ny_banner_video{ display: none; }
+  .ny_banner_video.ling{ display: block; }
+}
+@media (min-width: 768px) and (max-width: 1200px) { .hog_fenjie .div_nr { position: relative; width: 100%; }
+  .hog_fenjie .div_nr .div_nr_01 { float: left; position: relative; width: 50%; display: block; padding: 20px; }
+  .hog_fenjie .div_title { display: none; }
+  .kc_section_01 { margin-top: 30px; margin-bottom: 30px; }
+  .kc_section_01 .div1 { width: 50%; margin-bottom: 10px; }
+  .kc_section_01 .div1 .divv1 { padding-left: 19px; }
+  .kc_section_01 .div2 { width: 50%; margin-bottom: 10px; padding-left: 19px; padding-right: 19px; } }
+@media (max-width: 991px) { .title span.span1 { font-size: 22px; margin-bottom: 10px; }
+  .title span.span2 { font-size: 16px; }
+  .vadio{ display: none; }
+  .vadio .mg2 { width: 44px; height: 44px; top: 4%; }
+  .youshi > div { padding: 0; }
+  .youshi > div a { padding-bottom: 42px; margin: 0 1.5px 0; }
+  .youshi > div a span.span1 { font-size: 16px; color: #303030; margin: 35px 0 13px; }
+  .youshi > div a span.span2 { font-size: 14px; line-height: 18px; height: 36px; color: #999; }
+  .youshi > div:first-child a { margin-left: 1.5px; }
+  .section_01 { margin-top: 50px; }
+  .section_04 { margin-top: 50px; }
+  .section_05 { padding: 35px 0 30px; background: none; }
+  .section_05 .div1>div{ padding-left: 15px; }
+  .section_05 .div1>div:first-child{ padding-right: 15px; }
+  .section_05 .div_huodong { margin-bottom: 20px; }
+  .section_07 { padding: 35px 0 40px; }
+  .section_07 .div_P { padding-top: 30px; }
+  .section_07 .div_partner a { display: block; width: 100%; }
+  .section_07 .div_partner a img { display: block; width: 100%; max-width: 100%; position: relative; top: 0; }
+  .section_07 .div_partner a:hover img { top: -10px; }
+  .section_07 .div_partner .slick-next, .section_07 .div_partner .slick-prev { display: none !important; }
+  .baoming .div1 b.b1 { position: static; text-align: center; margin-left: 15px; }
+  .baoming .div1 .but_01 { position: relative; left: 50%; margin-left: -53px; margin-top: 10px; }
+  .baoming .div1 .divv1 { padding: 0; }
+  .baoming .div1 .divv1 .put_01 { margin-top: 10px; height: 42px; line-height: 42px; }
+  .baoming .div1 .divv1 .select_01 { margin-top: 10px; }
+
+  .baoming .div1 .divv2{ position: static; margin: 10px auto 0; }
+
+
+
+  .footer .foot_top .div_right { float: none; text-align: center; }
+  .footer .foot_top .div_right .bdshare-button-style0-32 { width: 130px; margin: 20px auto 0; }
+  .footer .foot_top .div_right .bdshare-button-style0-32 a { margin: 0 9px; }
+  .footer #top { position: fixed; right: 20px; top: auto; bottom: 70px !important; z-index: 999; width: 50px; height: 50px; }
+  .footer #top img { display: block; width: 100%; max-width: 100%; }
+  .div_title { font-size: 22px; color: #000; line-height: 40px; background: url("../images/in_xian.jpg") left bottom no-repeat; }
+  .div_title span.span1 bdo { font-size: 16px; color: #a9a9a9; text-transform: uppercase; margin-left: 7px; }
+  .div_title a { font-size: 12px; color: #6f6f6f; right: 0; top: 0; }
+  .div_title a:hover { color: #e91746; }
+  .hog_section_01 { padding-top: 0; }
+  .hog_section_01 .title { padding-bottom: 26px; }
+  .hog_section_01 .title span.span1 { line-height: 28px; }
+  .hog_youshi { padding-top: 30px; }
+  .hog_section_03 { margin-top: 50px; }
+  .hog_fenjie { margin-top: 35px; }
+  .hog_section_06 { margin-top: 50px; }
+  .jt_section_03 { margin-top: 30px; padding-top: 60px; }
+  .jt_section_04 { margin-top: 50px; }
+  /*            kecheng           */
+  .kc_banner span { max-width: 584px; padding-left: 0%; }
+  /*             zhuomeidongtai                  */
+  .dt_section_01 { margin-top: 50px; }
+  /*      zhaopinyingcai_xq       */
+  .zpxq_section_01 .zpxq_right { margin-top: 20px; }
+  .zpxq_section_01 .zpxq_L{ width: 100%; padding-right: 0; }
+  .zpxq_section_01 .zpxq_R{ width: 100%;}
+  .zpxq_section_01 .zpxq_left{ margin-left: 15px; margin-right: 15px; }
+  .zpxq_section_01 .zpxq_right{ margin-left: 15px; margin-right: 15px; }
+
+  .fb_map { display: none; }
+  .nrxq_section_01 .nr_L { width: 100%; }
+  .nrxq_section_01 .nr_L .nrxq_left { padding-right: 0; }
+  .nrxq_section_01 .nr_R { width: 100%; } 
+    /*     xiaoquxiangqing        */
+  .xqxqx_span1 { font-size: 20px; color: #000; line-height: 20px; margin-top: 50px; }
+
+  .xqxq_section_01 .div1:nth-child(2n){ padding-left: 15px;}
+  .xqxq_section_01 .div1:nth-child(2n+1){ padding-right: 15px;}
+
+
+
+  /* neirongliebiao */
+  .nrxq_left .nr_div1{ line-height: 30px; padding-bottom: 19px; border-bottom: 1px solid #eee; margin-top: 30px; position: relative; }
+  .nrxq_left .nr_div1 .nr_fenx{ position: relative; z-index: 9; top: -5px; }
+  .nrxq_left .nr_div1 .nr_fenx a{ float: left; width: 22px; height: 22px; background: #f2f2f2; border-radius: 2px; margin-left: 1px; }
+  .nrxq_left .nr_div1 .nr_fenx a img{ margin-top: 6px; }
+  .nrxq_left .nr_div1:first-child{ margin-top: 0;}
+  .nrxq_left .nr_div1 a.a1{ font-size: 18px; color: #000; margin-bottom: 11px; }
+  .nrxq_left .nr_div1 a.a1:hover{ color: #ea1746; }
+  .nrxq_left .nr_div1 span.span1{ font-size: 16px; color: #8d8c8c; line-height: 30px; }
+  .nrxq_left .nr_div1 span.span2{ margin-top: 16px;}
+  .nrxq_left .nr_div1 bdo.bdo1{ font-size: 14px; color: #bababa; line-height: 30px; margin-top: 16px; }
+  .nrxq_left .nr_div1 a.a2{ font-size: 14px; color: #bababa; right: 0; bottom: 0;}
+  .nrxq_left .nr_div1 a.a2 bdo.bdo2{ width: 7px; height: 10px; background: url('../images/news_jiantou.png') center center no-repeat; margin-left: 7px; }
+  .nrxq_left .nr_div1 a.a2:hover{ color: #ea1746; }
+  .nrxq_left .nr_div1 a.a2:hover bdo.bdo2{ background: url('../images/tip_04.png') center center no-repeat;}
+  .nrxq_left .nr_div1 span.span3{ padding-right: 110px; overflow: hidden; }
+
+  .nrxq_left .nr_a1{ line-height: 40px; border: 1px solid #e91746; border-radius: 40px; padding: 0 41px; font-size: 16px; color: #e91746; margin-top: 36px; margin-bottom: 4px; }
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) { 
+  .baoming{ display: none; }
+  .celan, .lijizunxun { display: none; }
+  .footer { padding-top: 0; }
+  .footer .foot_top { display: none; }
+  .footer #top { bottom: 30px; width: 35px; height: 35px; }
+    .section_03 .wenzi { padding: 80px 8% 80px; } 
+
+  .hog_fenjie .div_nr { position: relative; width: 100%; }
+  .hog_fenjie .div_nr .div_nr_01 { float: left; position: relative; width: 100%; display: block; padding: 20px; }
+  .hog_fenjie .div_nr .div_nr_01:first-child { padding-top: 0; }
+  .hog_fenjie .div_title { display: none; }
+  .hog_time a.a1 { margin-top: 20px; }
+  .jt_system { margin-top: 0; }
+  .jt_system .div1 { margin-top: 20px; margin-left: -15px; margin-right: -15px; }
+  .jt_system .div1 .divv1 { padding: 0 15px; }
+  .jt_system .div1 .divv1 b.b1 { font-size: 22px; margin: 25px 0 20px; }
+  .kc_section_01 { margin-top: 20px; margin-bottom: 20px; }
+  .kc_section_01 .div1 { width: 100%; margin-bottom: 10px; }
+  .kc_section_01 .div1 .divv1 { padding-left: 0; padding-right: 0; }
+  .kc_section_01 .div2 { width: 100%; margin-bottom: 10px; padding-left: 0; padding-right: 0; }
+  /*            kecheng           */
+  .kc_banner { padding-top: 130px; }
+  .kc_banner span { max-width: 584px; padding-left: 0%; }
+  .kc_banner span.span1 { font-size: 36px; color: #fff; }
+  .kc_banner span.span2 { font-size: 14px; line-height: 28px; color: #999; margin-top: 17px; }
+  .kc_section_02 a.a1 { padding-bottom: 0; margin-bottom: 30px; }
+  .fb_banner { height: auto; padding:65px 0; }
+  .fb_banner .fb_div1 .div2{ padding-top: 60px; }
+  .fb_map2 { margin-bottom: 50px; }
+  .fb_map2 .div1 { width: 100%; }
+  .fb_map2 .div1 ul { margin-top: 18px; }
+  .fb_map2 .div1 ul li { line-height: 30px; padding: 10px 0 0 38px; }
+  .fb_map2 .div1 ul li .mg2 { left: 0; top: 11px; } 
+
+  .fb_map2 .div1 .divv1{ font-size: 16px; }
+  .fb_map2 .div1 .divv1 a{ font-size: 14px; }
+
+  /* 招聘英才--详情 */
+  .zpxq_section_01{ margin-bottom: 30px; }
+  .zpxq_section_01 .zpxq_left .div2 span.span1{ font-size: 16px; }
+  .zpxq_section_01 .zpxq_left .div1{ line-height: 34px; padding-left: 20px; padding-right: 20px; }
+  .zpxq_section_01 .zpxq_left .div2{ padding-left: 0; padding-right: 0; line-height: 34px; }
+
+
+
+  /* 手机端招聘 */
+  .zp_bream .div1{ margin-left: 0; margin-right: 0; margin-top: -10px; }
+  .zp_bream .div1 a{ display: inline-block; margin-top: 10px; }
+  .xq_zp_phone .div1 { padding: 7px 10px 37px; border:1px solid #ececec; font-size: 14px; color: #828181; margin-bottom: 18px;  }
+  .xq_zp_phone .div1 span{ font-family: Arial; color: #b5b5b5; }
+  .xq_zp_phone .div1:last-child{ margin-bottom: 90px; }
+  .xq_zp_table2 b a{ font-size: 20px; color: #000; }
+  .xq_zp_table2 tr{ line-height: 80px; }
+  .xq_zp_table2 tr:last-child{ line-height: 24px; }
+  .xq_zp_table2 bdo{ margin: 0 8px; }
+  .xq_zp_table2 a img{ display: inline-block; width: 14px; height: 26px; }
+
+  /* 2017-08-09 */
+  .banner .owl-controls{ bottom: 9px; }
+  .section_03 .wenzi span.span1,.section_03 .wenzi b.b2{ color: #333; }
+  .kc_section_02 a.a1 span.span2.one{
+    height: 60px;
+    white-space: normal;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3; 
+    overflow: hidden;
+  }
+
+  .pp_section_01{ margin-top: 50px; }
+  .pp_sec_01{ margin-bottom: 0; }
+  .pp_sec_01 a.a1 span.span1{ position: static; width: 100%; height: auto; background: none; }
+  .pp_sec_01 a.a1 span.span1 .bdo1 .bdo2 i.i1{color: #303030; font-size: 16px;}
+  .pp_section_02{ margin-top: 20px; }
+
+  .xqxq_section_01 .div1:nth-child(2n) img{ max-width: 100%; }
+  .mb75{ margin-bottom: 10px; }
+
+  .mod-10{ padding-top: 50px; padding-bottom: 50px; }
+  .navbar-default .navbar-nav .dropdown-menu a{ height: 46px; }
+
+  .section_06 .div_video .div1 { position: absolute; left: 10%; top: 6.8%; right: 10%; bottom: 6.8%; width: 80%; height: 86.4%; }
+  .section_06 .div_video .div1 #video { padding-top: 50px;}
+
+
+}
+@media (max-width: 600px) { .activities a.a1 { width: 100%; padding-bottom: 40px; margin-top: 30px; }
+  .activities a.a1 .span_left { position: relative; display: block; }
+  .activities a.a1 .span_left .mg1 { width: 100%; max-width: 100%; }
+  .activities a.a1 .span_right { padding-left: 0; margin-top: 20px; }
+  .activities a.a1 .span_right span.span2 { font-size: 16px; line-height: 30px; color: #8d8c8c; }
+  .activities a.a1 .span_right span.span3 { width: 100%; left: 0; bottom: 0px; padding-left: 0; } 
+
+
+}
+  
+@media (max-width: 500px) { /* .section_03 { height: 666px; width: 100%; } */
+  
+  .section_03 .wenzi b.b1 { font-size: 22px; line-height: 44px; }
+  .section_03 .wenzi span.span1 { font-size: 16px; line-height: 32px; }
+  .section_03 .wenzi b.b2 { font-size: 18px; line-height: 32px; }
+  .section_03 .wenzi a { font-size: 14px; line-height: 24px; }
+  .section_05 .div1 .div_top { height: auto; }
+  .section_05 .div1 .div_top span.span1 { position: relative !important; }
+  .section_05 .div1 .div_top span.span2 { padding: 20px 0 10px; }
+  .section_05 .div1 .div_ul { margin-top: 0; }
+  .section_05 .div1 .div_ul li span { font-size: 14px; }
+  .section_05 .div1 .div_ul li a { padding: 0 90px 0 22px; }
+  .fb_banner .fb_div1 .select_01 { width: 80%; } 
+
+    /* 手机端招聘 */
+/*     .zp_bream .div1{ margin-left: 0; margin-right: 0; margin-top: -10px; }
+    .zp_bream .div1 a{ display: inline-block; margin-top: 10px; }
+    .xq_zp_phone .div1 { padding: 7px 10px 37px; border:1px solid #ececec; font-size: 14px; color: #828181; margin-bottom: 18px;  }
+    .xq_zp_phone .div1 span{ font-family: Arial; color: #b5b5b5; }
+    .xq_zp_phone .div1:last-child{ margin-bottom: 90px; }
+    .xq_zp_table2 b a{ font-size: 20px; color: #000; }
+    .xq_zp_table2 tr{ line-height: 80px; }
+    .xq_zp_table2 tr:last-child{ line-height: 24px; } */
+    .zp_bream .div1 a{ display: inline-block; margin-top: 10px; margin-left: 5px; margin-right: 5px; }
+    .xq_zp_table2 bdo{ margin: 0 3px; }
+    /* .xq_zp_table2 a img{ display: inline-block; width: 14px; height: 26px; } */
+
+}
+
+/*# sourceMappingURL=media.css.map */

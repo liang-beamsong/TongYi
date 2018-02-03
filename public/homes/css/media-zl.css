@@ -1,0 +1,95 @@
+﻿@media (min-width: 1400px){}
+@media (min-width: 1200px){
+}
+@media (min-width: 992px){
+  .mod-04 .box .text{
+    height: 354px;
+  }
+  .mod-04 .box .text span{
+    display: block;
+  }
+  .mod-05{
+    padding-top: 76px;
+    background: url("../images/z_line2.jpg") center top repeat-y;
+  }
+  .mod-05 .box{
+    width: 50%;
+    min-height: 70px;
+  }
+  .mod-05 .box .day{
+    width: 183px;
+  }
+  .mod-05 .box:last-child{
+    min-height: auto;
+  }
+}
+@media (min-width: 768px){}
+@media (min-width: 992px) and (max-width : 1199px){
+  .mod-01 .text{
+    margin-top: -73px;
+    font-size: 16px;
+  }
+  .mod-01 .text .name{
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1199px){}
+@media (min-width: 768px) and (max-width : 1024px){}
+@media only screen and (max-width : 991px){
+  .mod-01 .text{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    position: static;
+  }
+    .mod-01 .text .pl10{padding-left:0;}
+  .mod-01 .text .name{
+    font-size: 24px;
+  }
+  .mod-03{
+    width: auto;
+  }
+  .mod-03 .box{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mod-05 .box{
+    padding-left: 110px;
+    margin-bottom: 30px;
+  }
+  .mod-05 .box .day{
+    left: 0;
+  }
+  .dot-01{
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+@media only screen and (max-width : 767px){
+  .mod-01 .map{ margin-left: -15px; margin-right: -15px; }
+  .mod-01 .map .anchor{ 
+      -webkit-transform:scale(0.7); 
+      -moz-transform:scale(0.7); 
+      -o-transform:scale(0.7);
+   }
+
+
+   @-webkit-keyframes zoomIn2 { 0% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { -webkit-transform: scale3d(1.8, 1.8, 1.8); transform: scale3d(1.8, 1.8, 1.8); opacity: 0; } }
+  @keyframes zoomIn2 { 0% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { -webkit-transform: scale3d(1.8, 1.8, 1.8); transform: scale3d(1.8, 1.8, 1.8); opacity: 0; } }
+}
+@media (min-width: 641px) and (max-width: 991px){
+
+}
+@media only screen and (max-width : 640px){
+
+}
+@media only screen and (max-width: 480px){
+
+}
