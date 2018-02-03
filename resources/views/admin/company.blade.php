@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-1 control-label">SEO关键词</label>
+                        <label class="col-sm-1 control-label">品牌词</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="keyword" id="input2" required="" value="{{$compant->keyword}}">
                         </div>

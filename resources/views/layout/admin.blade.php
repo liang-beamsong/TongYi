@@ -88,9 +88,9 @@
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>首页管理</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="map-google.html">首页配置</a>
+                            <li><a href="/config/home">首页配置</a>
                             </li>
-                            <li><a href="map-google.html">轮播图管理</a>
+                            <li><a href="/config/carousel">轮播图管理</a>
                             </li>
                         </ul>
                     </li>
@@ -138,9 +138,9 @@
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>友情链接</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="mail-inbox.html">添加链接</a>
+                            <li><a href="/links/add">添加链接</a>
                             </li>
-                            <li><a href="mail-compose.html">链接列表</a>
+                            <li><a href="/links/list">链接列表</a>
                             </li>
                         </ul>
                     </li>

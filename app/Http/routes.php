@@ -28,7 +28,11 @@ Route::group(['middleware'=>'adminlogin'], function(){
 	 */
 	Route::controller('article','Admin\ArticleController');
 	Route::controller('nav','Admin\NavigationController');
+	//company 公司简介  config 首页配置
 	Route::controller('company','Admin\ConfigController');
+	Route::controller('config','Admin\ConfigController');
+
+	Route::controller('links','Admin\LinksController');
 });
 
 /**
