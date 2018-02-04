@@ -27,12 +27,18 @@ Route::group(['middleware'=>'adminlogin'], function(){
 	 * 后台一级导航路由
 	 */
 	Route::controller('article','Admin\ArticleController');
+	Route::controller('activity','Admin\ActivityController');
+	Route::controller('dynamic','Admin\DynamicController');
+	Route::controller('advantage','Admin\AdvantageController');
+	Route::controller('partner','Admin\PartnerController');
+
 	Route::controller('nav','Admin\NavigationController');
 	//company 公司简介  config 首页配置
 	Route::controller('company','Admin\ConfigController');
 	Route::controller('config','Admin\ConfigController');
 
 	Route::controller('links','Admin\LinksController');
+	Route::controller('message','Admin\messageController');
 });
 
 /**

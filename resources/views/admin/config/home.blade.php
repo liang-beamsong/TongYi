@@ -53,19 +53,19 @@
         <form action="/config/logo" method="post" enctype="multipart/form-data" class="form-horizontal form-border" id="form" novalidate="novalidate">
             <div class="form-group">
                 <div class="col-sm-6" style="width: 410px;height:57px;margin:0 auto;float: none;">
-                    <img src="{{$hconfig->logo}}" style="width: 100%;height: 100%;">
+                    <img src="{{$hconfig->path}}" style="width: 100%;height: 100%;">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-3 control-label">上传logo</label>
+                <label class="col-sm-3 control-label"></label>
                 <div class="col-sm-6">
-                    <input type="file"  name="logo" id="input1" style="margin-top: 3px;">
+                    <input type="file"  name="path" id="input1" style="margin-top: 3px;">
+                </div>
+                <div class=" col-sm-3">
+                  <input type="hidden" name="OriginalPath" value="{{$hconfig->path}}">
+                  <button type="submit" class="btn btn-primary">提交</button>
                 </div>
             </div>
-          <div class="form-group">
-            <div class="col-sm-offset-8 col-sm-10">
-              <button type="submit" class="btn btn-primary">提交</button></div>
-          </div>
         </form>
       </div>
     </div>

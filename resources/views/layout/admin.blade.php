@@ -79,9 +79,13 @@
                         <a href="/admin"><i class="fa fa-dashboard"></i><span>首页</span></a>
                     </li>
                      <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>公司简介</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>公司信息</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="/company/company">公司简介</a>
+                            <li><a href="/company/contact">联系我们</a>
+                            </li>
+                            <li><a href="/company/join">合作加盟</a>
+                            </li>
+                            <li><a href="/company/team">教研团队</a>
                             </li>
                         </ul>
                     </li>
@@ -101,37 +105,56 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i><span>校区管理</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+
+                     <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>课程管理</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="/user/back">新增校区</a>
+                            <li><a href="/article/add">添加课程</a>
                             </li>
-                            <li><a href="/user/back">校区列表</a>
+                            <li><a href="/article/list">课程列表</a>
                             </li>
                         </ul>
                      </li>
                      <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>文章管理</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>童翼动态</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="/article/add">添加文章</a>
+                            <li><a href="/dynamic/add">添加动态</a>
                             </li>
-                            <li><a href="/article/list">文章列表</a>
+                            <li><a href="/dynamic/list">动态列表</a>
                             </li>
                         </ul>
                      </li>
                     <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>合作伙伴</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>童翼活动</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="map-google.html">添加合作方</a>
+                            <li><a href="/activity/add">添加活动</a>
                             </li>
-                            <li><a href="map-google.html">合作伙伴列表</a>
+                            <li><a href="/activity/list">活动列表</a>
                             </li>
                         </ul>
-                    </li>
+                     </li>
+                     <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>童翼优势</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="/advantage/add">添加优势</a>
+                            </li>
+                            <li><a href="/advantage/list">优势列表</a>
+                            </li>
+                        </ul>
+                     </li>
+                     <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>合作伙伴</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="/partner/add">添加伙伴</a>
+                            </li>
+                            <li><a href="/partner/list">伙伴列表</a>
+                            </li>
+                        </ul>
+                     </li>
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-table"></i><span>留言管理</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="tables-data.html">留言列表</a>
+                            <li><a href="/message/list">留言列表</a>
                             </li>
                         </ul>
                     </li>

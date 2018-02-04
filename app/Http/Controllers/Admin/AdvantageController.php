@@ -8,32 +8,30 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use DB;
-class ArticleController extends Controller
+class AdvantageController extends Controller
 {
     public function getAdd()
     {
-        $data=DB::table('ty_nav')->get();
-    	return view('admin.article.add',['nav'=>$data]);
+    	return view('admin.advantage.add');
     }
 
     public function getList(Request $request)
     {
-        $data=DB::table('ty_article')->where(function($quest)use($request){
+        $data=DB::table('ty_advantage')->where(function($quest)use($request){
             $keyword=$request->input('title');
              if($keyword){
                  $quest->where('title','like','%'.$keyword.'%');
               }
             })->orderBy('id','desc')->paginate($request->input('list_length',10));
         $num = 1;
-    	return view('admin.article.list',['article' => $data,'num'=>$num,'request' => $request]);
+    	return view('admin.advantage.list',['advantage' => $data,'num'=>$num,'request' => $request]);
     }
 
     public function getEdit(Request $request)
     {
-        $data=DB::table('ty_nav')->get();
         $id = $request->only(['id']);
-        $res = DB::table('ty_article')->where('id',$id)->first();
-    	return view('admin.article.edit',['nav'=>$data,'article' => $res]);
+        $res = DB::table('ty_advantage')->where('id',$id)->first();
+    	return view('admin.advantage.edit',['advantage' => $res]);
     }
 
     public function postInsert(Request $request)
@@ -43,9 +41,9 @@ class ArticleController extends Controller
         if($request->hasFile('path')){
             $data['path']=$this->upload($request);
         }
-        $res = DB::table('ty_article')->insert($data);
+        $res = DB::table('ty_advantage')->insert($data);
         if($res){
-            return redirect('/article/list')->with('info','成功');
+            return redirect('/advantage/list')->with('info','成功');
         }else{
              return back()->with('info','失败');
         }
@@ -61,9 +59,9 @@ class ArticleController extends Controller
             $data['path']=$this->upload($request);
         }
         $data['time'] = time();
-        $res = DB::table('ty_article')->where('id',$id)->update($data);
+        $res = DB::table('ty_advantage')->where('id',$id)->update($data);
         if($res){
-            return redirect('/article/list')->with('info','成功');
+            return redirect('/advantage/list')->with('info','成功');
         }else{
              return back()->with('info','失败');
         }
@@ -72,11 +70,11 @@ class ArticleController extends Controller
     public function getDele(Request $request)
     {
         $id = $request->only(['id']);
-        $path = DB::table('ty_article')->where('id',$id)->first();
+        $path = DB::table('ty_advantage')->where('id',$id)->first();
         @unlink('.'.$path->path);
-        $res = DB::table('ty_article')->where('id',$id)->delete();
+        $res = DB::table('ty_advantage')->where('id',$id)->delete();
         if($res){
-            return redirect('/article/list')->with('info','成功');
+            return redirect('/advantage/list')->with('info','成功');
         }else{
              return back()->with('info','失败');
         }
@@ -90,7 +88,7 @@ class ArticleController extends Controller
             //获取文件的后缀名
             $suffix=$request->file('path')->getClientOriginalExtension();
             //文件夹的规则
-            $dir='./images/article';
+            $dir='./images/advantage';
             $request->file('path')->move($dir,$fileName.'.'.$suffix);
             //拼接路径
             $data['path']=trim($dir.'/'.$fileName.'.'.$suffix,'.');

@@ -131,48 +131,15 @@
   <body>
      @extends('layout.header')
     <section class="owl-carousel banner">
+      @foreach($carousel as $k=>$v)
       <div class="item">
         <a href="/166.html" target="_blank">
           <picture>
             <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20180110/713727b704fc0f5505a538fba9b409da.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/ba9af59b5caea27c0e06e6d9fb887754.jpg" /></picture>
+              <img src="{{$v->path}}" /></picture>
         </a>
       </div>
-      <div class="item">
-        <a href="/167.html" target="_blank">
-          <picture>
-            <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20171227/8fab05f99f6969fdfb5758b890e964cf.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/e724db6a11717ed2a8372982447a1b86.jpg" /></picture>
-        </a>
-      </div>
-      <div class="item">
-        <a href="/168.html" target="_blank">
-          <picture>
-            <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20171227/de1d7ece730f913bb1578105e5f82c3c.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/3260c50150e61f159c74e2a802e5ff9d.jpg" /></picture>
-        </a>
-      </div>
-      <div class="item">
-        <a href="/169.html" target="_blank">
-          <picture>
-            <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20171227/0d33c2f58d99bc1d3e321d5576f2058d.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/b3770d7acef1c53dc61c28c2a77e1e01.jpg" /></picture>
-        </a>
-      </div>
-      <div class="item">
-        <a href="/170.html" target="_blank">
-          <picture>
-            <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20171227/4ce62f32f3bfc4f701b091721d42ec88.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/ed12868d7fd5b40cd0f0b4db72b2639a.jpg" /></picture>
-        </a>
-      </div>
-      <div class="item">
-        <a href="/183.html" target="_blank">
-          <picture>
-            <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20180124/f156312cc35f0bbd51d741603e18baf5.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/0dc02c229fbe4e64deec11f4d6216a59.jpg" /></picture>
-        </a>
-      </div>
+      @endforeach
     </section>
     <script>jQuery(document).ready(function($) {
         $('.banner').owlCarousel({
@@ -315,32 +282,21 @@
           <br />有强烈的自信、清晰的语言表达能力
           <br />从而他们的生活变得更美好</span></div>
       <div class="container-fluid div_class">
+        @foreach($curriculum as $k=>$v)
         <div class="col-md-6">
           <a href="/hog.html" target="_self" title="HOG课程" class="db rel ovh">
-            <img src="/homes/picture/6dbdd628d61f3b1f9ea3d1252f89b192.jpg" alt="HOG课程" class="db guodu">
+            <img src="{{$v->path}}" class="db guodu">
             <span class="span_mc abs guodu"></span>
             <span class="span1 db abs">
-              <b class="b1 db">HOG课程</b>
-              <bdo class="bdo_01 db">源自全球规模最大的儿童戏剧教育机构</bdo>
+              <b class="b1 db">{{$v->title}}</b>
+              <bdo class="bdo_01 db">{{$v->describe}}</bdo>
               <span href="/hog.html" target="_self" class="dib rel">
                 <bdo class="bdo1 abs db guodu"></bdo>
                 <bdo class="bdo2 abs db guodu"></bdo>了解更多
                 <img src="/homes/picture/tip_02.png" alt=""></span></span>
           </a>
         </div>
-        <div class="col-md-6">
-          <a href="/theatre.html" target="_self" title="剧团课程" class="db rel ovh">
-            <img src="/homes/picture/39ceafcf0749ddf94ebeee0ff3d90e67.jpg" alt="剧团课程" class="db guodu">
-            <span class="span_mc abs guodu"></span>
-            <span class="span1 db abs">
-              <b class="b1 db">剧团课程</b>
-              <bdo class="bdo_01 db">基于伦敦圣三一学院戏剧考试教学大纲</bdo>
-              <span href="/theatre.html" target="_self" class="dib rel">
-                <bdo class="bdo1 abs db guodu"></bdo>
-                <bdo class="bdo2 abs db guodu"></bdo>了解更多
-                <img src="/homes/picture/tip_02.png" alt=""></span></span>
-          </a>
-        </div>
+        @endforeach
       </div>
     </section>
     <section class="section_05">

@@ -18,10 +18,10 @@
     <div class="col-md-12">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">课程列表</h3></div>
+          <h3 class="panel-title">动态列表</h3></div>
         <div class="panel-body">
           <div role="grid" id="example_wrapper" class="dataTables_wrapper form-inline no-footer">
-          <form action="/article/list">
+          <form action="/dynamic/list">
             <div class="row">
               <div class="col-xs-6">
                 <div class="dataTables_length" id="example_length">
@@ -54,12 +54,12 @@
                   <th  aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 150px;text-align: center;">操作</th></tr>
               </thead>
               <tbody>
-                    @foreach($article as $k=>$v)
+                    @foreach($dynamic as $k=>$v)
                         <tr class="even" style="text-align: center;">
                             <td style="width: 50px;">{{$num++}}</td>
                             <td>{{$v->title}}</td>
                             <td>{{$v->keyword}}</td>
-                            <td><a href="/article/edit?id={{$v->id}}">修改</a> | <a href="/article/dele?id={{$v->id}}">删除</a></td>
+                            <td><a href="/dynamic/edit?id={{$v->id}}">修改</a> | <a href="/dynamic/dele?id={{$v->id}}">删除</a></td>
                         </tr>
                     @endforeach
               </tbody>
@@ -69,7 +69,7 @@
               <div class="col-xs-6">
                 <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
                    <ul class="pagination">
-                      {!! $article->appends($request->only(['list_length','title']))->render() !!} 
+                      {!! $dynamic->appends($request->only(['list_length','title']))->render() !!} 
                     </ul>
                 </div>
               </div>

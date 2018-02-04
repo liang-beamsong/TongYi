@@ -14,10 +14,10 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title" style="margin-left: 20px;">新增课程</h3>
+                <h3 class="panel-title" style="margin-left: 20px;">新增动态</h3>
             </div>
             <div class="panel-body">
-                <form action="/article/insert" method="post" enctype="multipart/form-data" class="form-horizontal form-border" id="form" novalidate="novalidate">
+                <form action="/dynamic/insert" method="post" enctype="multipart/form-data" class="form-horizontal form-border" id="form" novalidate="novalidate">
                     <div class="form-group">
                         <label class="col-sm-1 control-label">标题</label>
                         <div class="col-sm-10">
@@ -47,7 +47,7 @@
                         <div class="col-sm-10">
                             <script id="editor" name="content" type="text/plain" style="width:101.5%;height:450px;"></script><br>
                             {{csrf_field()}}
-                            <button type="submit" class="btn btn-primary" style="float: right;">发布课程</button>
+                            <button type="submit" class="btn btn-primary" style="float: right;">发布动态</button>
                         </div>
                     </div>
                 </form>

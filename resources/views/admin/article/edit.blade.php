@@ -17,7 +17,7 @@
                 <h3 class="panel-title" style="margin-left: 20px;">修改文章</h3>
             </div>
             <div class="panel-body">
-                <form action="/article/update" method="post" class="form-horizontal form-border" id="form" novalidate="novalidate">
+                <form action="/article/update" method="post" enctype="multipart/form-data" class="form-horizontal form-border" id="form" novalidate="novalidate">
                     <div class="form-group">
                         <label class="col-sm-1 control-label">标题</label>
                         <div class="col-sm-10">
@@ -37,22 +37,17 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-1 control-label">导航选择</label>
+                        <label class="col-sm-1 control-label">缩略图</label>
                         <div class="col-sm-10">
-                            <select class="form-control" name="nav_id">
-                            @foreach($nav as $k=>$v)
-                                @if($v->id != 1)
-                                    <option value="{{$v->id}}" @if($v->id == $article->nav_id) selected @endif >{{$v->name}}</option>
-                                @endif
-                            @endforeach
-                            </select>
+                            <input type="file"  name="path" id="input1" style="margin-top: 3px;" value="{{$article->path}}">
                         </div>
                     </div>
                     <div class="form-group" style="width: 100%;">
                         <label class="col-sm-1 control-label">正文</label>
                         <div class="col-sm-10">
-                            <script id="editor" name="content" type="text/plain" style="width:101.5%;height:450px;">{{$article->content}}</script><br>
+                            <script id="editor" name="content" type="text/plain" style="width:101.5%;height:450px;">{!!$article->content!!}</script><br>
                             <input type="hidden" name="id" value="{{$article->id}}">
+                            <input type="hidden" name="OriginalPath" value="{{$article->path}}">
                             {{csrf_field()}}
                             <button type="submit" class="btn btn-primary" style="float: right;">发布文章</button>
                         </div>

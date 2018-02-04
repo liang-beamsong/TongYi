@@ -17,20 +17,22 @@
        @foreach($carousel as $k=>$v)
         <form action="/config/carousel" method="post" enctype="multipart/form-data" class="form-horizontal form-border" id="form" novalidate="novalidate">
             <div class="form-group">
-                <div class="col-sm-6" style="width: 610px;height:57px;margin:0 auto;float: none;background-image: url({{$v->path}});background-size: 100% 100%;">
+                <div class="col-sm-6" style="width:60%;height:150px;margin:0 auto;float: none;background-image: url({{$v->path}});background-size: 100% 100%;">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label"></label>
                 <div class="col-sm-6">
                     <input type="file"  name="path" id="input1" style="margin-top: 3px;">
+                    <input type="url" class="form-control" name="url" id="input1" value="{{$v->url}}">
+                </div>
+                <div class="col-sm-3">
+                    <input type="hidden" name="id" value="{{$v->id}}">
+                    <input type="hidden" name="OriginalPath" value="{{$v->path}}">
+                    <input type="hidden" name="yurl" value="{{$v->url}}">
+                    <button type="submit" class="btn btn-primary">提交</button>
                 </div>
             </div>
-          <div class="form-group">
-            <div class="col-sm-offset-8 col-sm-10">
-               <input type="hidden" name="id" value="{{$v->id}}">
-              <button type="submit" class="btn btn-primary">提交</button></div>
-          </div>
         </form>
        @endforeach 
       </div>

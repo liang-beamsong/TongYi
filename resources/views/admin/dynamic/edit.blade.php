@@ -14,40 +14,42 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title" style="margin-left: 20px;">新增课程</h3>
+                <h3 class="panel-title" style="margin-left: 20px;">修改动态</h3>
             </div>
             <div class="panel-body">
-                <form action="/article/insert" method="post" enctype="multipart/form-data" class="form-horizontal form-border" id="form" novalidate="novalidate">
+                <form action="/dynamic/update" method="post" enctype="multipart/form-data" class="form-horizontal form-border" id="form" novalidate="novalidate">
                     <div class="form-group">
                         <label class="col-sm-1 control-label">标题</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="title" id="input1" required="" placeholder="请输入文章标题!">
+                            <input type="text" class="form-control" name="title" id="input1" required="" value="{{$dynamic->title}}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1 control-label">关键词</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="keyword" id="input2" required="" placeholder="请输入文章关键词!">
+                            <input type="text" class="form-control" name="keyword" id="input2" required="" value="{{$dynamic->keyword}}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1 control-label">描述</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" name="describe" id="input13" placeholder="请输入文章描述!"></textarea>
+                            <textarea class="form-control" name="describe" id="input13">{{$dynamic->describe}}</textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1 control-label">缩略图</label>
                         <div class="col-sm-10">
-                            <input type="file"  name="path" id="input1" style="margin-top: 3px;">
+                            <input type="file"  name="path" id="input1" style="margin-top: 3px;" value="{{$dynamic->path}}">
                         </div>
                     </div>
                     <div class="form-group" style="width: 100%;">
                         <label class="col-sm-1 control-label">正文</label>
                         <div class="col-sm-10">
-                            <script id="editor" name="content" type="text/plain" style="width:101.5%;height:450px;"></script><br>
+                            <script id="editor" name="content" type="text/plain" style="width:101.5%;height:450px;">{!!$dynamic->content!!}</script><br>
+                            <input type="hidden" name="id" value="{{$dynamic->id}}">
+                            <input type="hidden" name="OriginalPath" value="{{$dynamic->path}}">
                             {{csrf_field()}}
-                            <button type="submit" class="btn btn-primary" style="float: right;">发布课程</button>
+                            <button type="submit" class="btn btn-primary" style="float: right;">发布动态</button>
                         </div>
                     </div>
                 </form>

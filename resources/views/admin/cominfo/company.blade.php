@@ -14,14 +14,14 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title" style="margin-left: 20px;">公司简介</h3>
+                <h3 class="panel-title" style="margin-left: 20px;">联系我们</h3>
             </div>
             <div class="panel-body">
-                <form action="/company/company" method="post" class="form-horizontal form-border" id="form" novalidate="novalidate">
+                <form action="/company/contact" method="post" class="form-horizontal form-border" id="form" novalidate="novalidate">
                     <div class="form-group">
-                        <label class="col-sm-1 control-label">公司名称</label>
+                        <label class="col-sm-1 control-label">SEO标题</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="corporatename" id="input1" required="" value="{{$compant->corporatename}}">
+                            <input type="text" class="form-control" name="title" id="input1" required="" value="{{$compant->title}}">
                         </div>
                     </div>
                     <div class="form-group">
@@ -37,11 +37,11 @@
                         </div>
                     </div>
                     <div class="form-group" style="width: 100%;">
-                        <label class="col-sm-1 control-label">公司简介</label>
+                        <label class="col-sm-1 control-label">简介信息</label>
                         <div class="col-sm-10">
-                            <script id="editor" name="companyprofile" type="text/plain" style="width:101.5%;height:450px;">{!!$compant->companyprofile!!}</script><br>
+                            <script id="editor" name="content" type="text/plain" style="width:101.5%;height:450px;">{!!$compant->content!!}</script><br>
                             {{csrf_field()}}
-                            <button type="submit" class="btn btn-primary" style="float: right;">提交简介</button>
+                            <button type="submit" class="btn btn-primary" style="float: right;">提交信息</button>
                         </div>
                     </div>
                 </form>
