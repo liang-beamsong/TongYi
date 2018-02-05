@@ -18,12 +18,12 @@
           <div class="form-group">
             <label class="col-sm-3 control-label">网站名称</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="name" id="input1"></div>
+              <input type="text" class="form-control" name="name" id="input1" maxlength="20"></div>
           </div>
           <div class="form-group">
             <label class="col-sm-3 control-label">网站地址</label>
             <div class="col-sm-6">
-              <input type="url" class="form-control" name="url" id="input2"></div>
+              <input type="url" class="form-control" name="url" id="input2" value="http://"></div>
           </div>
           <div class="form-group">
             <div class="col-sm-offset-8 col-sm-10">

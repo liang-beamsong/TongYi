@@ -17,7 +17,9 @@ class LinksController extends Controller
 
     public function getEdit(Request $request)
     {
-        return view('admin.links.edit');
+        $id = $request->only('id');
+        $res = DB::table('ty_links')->where('id',$id)->first();
+        return view('admin.links.edit',['links'=>$res]);
     }
 
     public function getDele(Request $request)
@@ -47,6 +49,18 @@ class LinksController extends Controller
     {
         $data = $request->only(['name','url']);
         $res = DB::table('ty_links')->insert($data);
+        if($res){
+            return redirect('/links/list')->with('info','成功');
+        }else{
+             return back()->with('info','修改失败');
+        }
+    }
+
+    public function postUpdate(Request $request)
+    {
+        $data = $request->only(['name','url']);
+        $id = $request->input('id'); 
+        $res = DB::table('ty_links')->where('id',$id)->update($data);
         if($res){
             return redirect('/links/list')->with('info','成功');
         }else{

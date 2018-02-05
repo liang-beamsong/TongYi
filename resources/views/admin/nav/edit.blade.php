@@ -28,7 +28,7 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">导航名称</label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" name="name" id="input1" value="{{$nav->name}}">
+                            <input type="text" class="form-control" maxlength="5" name="name" id="input1" value="{{$nav->name}}">
                         </div>
                     </div>
                     <div class="form-group">

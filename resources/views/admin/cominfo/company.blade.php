@@ -21,19 +21,19 @@
                     <div class="form-group">
                         <label class="col-sm-1 control-label">SEO标题</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="title" id="input1" required="" value="{{$compant->title}}">
+                            <input type="text" class="form-control" maxlength="30" name="title" id="input1" required="" value="{{$compant->title}}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1 control-label">品牌词</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="keyword" id="input2" required="" value="{{$compant->keyword}}">
+                            <input type="text" class="form-control" maxlength="50" name="keyword" id="input2" required="" value="{{$compant->keyword}}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1 control-label">SEO描述</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" name="describe" id="input13">{{$compant->describe}}</textarea>
+                            <textarea class="form-control" maxlength="100" name="describe" id="input13">{{$compant->describe}}</textarea>
                         </div>
                     </div>
                     <div class="form-group" style="width: 100%;">

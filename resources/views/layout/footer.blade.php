@@ -1,3 +1,6 @@
+<?php 
+  $links = ReadLinks();
+?>
 <footer class="footer rel">
       <a id="top" class="db abs">
         <img src="/homes/picture/top.png" alt=""></a>
@@ -78,14 +81,14 @@
       <div class="container">
         <div class="foot_center fix">
           <span class="span1 fl">友情链接：</span>
-          <a href="http://www.dreamaker.com.cn" target="_blank">卓美品致</a>丨
-          <a href="http://www.disujun.com/" target="_blank">网络营销</a>丨
-          <a href="/message.html" target="_blank">预约试听</a>丨
-          <a href="http://www.sunnyart.cn" target="_blank">少儿美术</a>丨</div></div>
+          @foreach($links as $k=>$v)
+          <a href="{{$v->url}}" target="_blank">{{$v->name}}</a>丨
+          @endforeach
+        </div>
       <div class="foot_bottom tc">
         <div class="container-fluid">
           <span style="white-space:normal;">All Rights Reserved&nbsp;</span>北京卓美时代国际文化有限公司 &nbsp;Copyright 2017
-          <span style="white-space:normal;">卓美品致&nbsp;</span>&nbsp;
+          <span style="white-space:normal;">童翼品致&nbsp;</span>&nbsp;
           <a style="padding-bottom:0px;margin:0px;outline-style:none;outline-color:invert;padding-left:0px;outline-width:0px;padding-right:0px;font-family:微软雅黑,;color:#707070;text-decoration:none;padding-top:0px;" href="http://icp.chinaz.com/info?q=dreamaker.com.cn" target="_blank">
             <span style="color:#000000;">京ICP备11024770号</span></a>
           <span style="FONT-FAMILY: 微软雅黑,; COLOR: #ffffff" white-space:normal;background-color:#333333;?="">&nbsp;</span>&nbsp;

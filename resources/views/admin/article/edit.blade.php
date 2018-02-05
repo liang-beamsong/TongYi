@@ -21,19 +21,19 @@
                     <div class="form-group">
                         <label class="col-sm-1 control-label">标题</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="title" id="input1" required="" value="{{$article->title}}">
+                            <input type="text" class="form-control" maxlength="30" name="title" id="input1" required="" value="{{$article->title}}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1 control-label">关键词</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="keyword" id="input2" required="" value="{{$article->keyword}}">
+                            <input type="text" class="form-control" maxlength="50" name="keyword" id="input2" required="" value="{{$article->keyword}}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1 control-label">描述</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" name="describe" id="input13">{{$article->describe}}</textarea>
+                            <textarea class="form-control" maxlength="100" name="describe" id="input13">{{$article->describe}}</textarea>
                         </div>
                     </div>
                     <div class="form-group">

@@ -18,17 +18,17 @@
           <div class="form-group">
             <label class="col-sm-3 control-label">网站名称</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="title" id="input1" value="{{$hconfig->title}}"></div>
+              <input type="text" class="form-control" maxlength="20" name="title" id="input1" value="{{$hconfig->title}}"></div>
           </div>
           <div class="form-group">
             <label class="col-sm-3 control-label">SEO关键词</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="keyword" id="input1" value="{{$hconfig->keyword}}"></div>
+              <input type="text" maxlength="50" class="form-control" name="keyword" id="input1" value="{{$hconfig->keyword}}"></div>
           </div>
           <div class="form-group">
             <label class="col-sm-3 control-label">SEO描述</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="describe" id="input1" value="{{$hconfig->describe}}"></div>
+              <input type="text" maxlength="100" class="form-control" name="describe" id="input1" value="{{$hconfig->describe}}"></div>
           </div>
           <div class="form-group">
             <div class="col-sm-offset-8 col-sm-10">
