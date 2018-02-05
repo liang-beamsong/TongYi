@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-  
   <head lang="en">
     <meta charset="utf-8">
     <title>卓美戏剧3-4岁课程</title>
@@ -142,60 +141,27 @@
       <div class="nrxq_main nrxq_section_01 fix">
         <div class="nr_L fl">
           <div class="nrxq_left">
-            <div class="nr_title">3-4岁课程
-              <bdo class="db">来源：卓美官网 编辑：Jerry 时间：2017-11-01</bdo></div>
+            <div class="nr_title">
+              {{$list->title}}
+              <bdo class="db">来源：童翼官网 编辑：童翼官方编辑 时间：<?php echo date('Y-m-d',$list->time)?></bdo>
+              </div>
             <div class="nrxq_main1">
-              <img src="/homes/picture/20180118113221_14191.jpg" alt="" />
-              <img src="/homes/picture/20180118113222_91111.jpg" alt="" />
-              <img src="/homes/picture/20180118113222_34847.jpg" alt="" />
-              <img src="/homes/picture/20180118113223_62389.jpg" alt="" />
-              <img src="/homes/picture/20180118113223_93735.jpg" alt="" />
-              <img src="/homes/picture/20180118113223_93870.jpg" alt="" />
-              <img src="/homes/picture/20180118113223_15283.jpg" alt="" />
-              <img src="/homes/picture/20180118113224_73337.jpg" alt="" /></div>
+                {!!$list->content!!}
+              </div>
             <div class="nrxq_main2 fix">
               <span class="fl">上一篇：
-                <a href="http://www.dreamaker.com.cn/167.html">4-6岁课程</a></span>
+                <a href="@if($previous) /{{$path}}/{{$previous->id}}.html @else javascript:void(0); @endif">@if($previous) {{$previous->title}} @else 没有了 @endif </a></span>
               <span class="fl">下一篇：
-                <a href="javascript:void(0)">没有了</a></span>
+                <a href="@if($next) /{{$path}}/{{$next->id}}.html @else javascript:void(0); @endif">@if($next) {{$next->title}} @else 没有了 @endif </a></span>
             </div>
             <div class="nrxq_main3">相关文章</div>
             <section class="nrxq_main4 pp_sec fix">
+
               <div class="col-sm-4 paddingzhi">
                 <a href="http://www.dreamaker.com.cn/178.html" class="db a1 tc" title="2018卓美英文戏剧节">
                   <span class="db ovh">
                     <img src="/homes/picture/6590af11471bd196492971b43345a37d.jpg" alt="2018卓美英文戏剧节" class="db guodu"></span>
                   <span class="span1 db one">2018卓美英文戏剧节</span></a>
-              </div>
-              <div class="col-sm-4 paddingzhi">
-                <a href="http://www.dreamaker.com.cn/177.html" class="db a1 tc" title="12月卓美剧团公演">
-                  <span class="db ovh">
-                    <img src="/homes/picture/07e02ba3209e437949bc1325d1bc371d.jpg" alt="12月卓美剧团公演" class="db guodu"></span>
-                  <span class="span1 db one">12月卓美剧团公演</span></a>
-              </div>
-              <div class="col-sm-4 paddingzhi">
-                <a href="http://www.dreamaker.com.cn/174.html" class="db a1 tc" title="12月圣诞节活动【限时】">
-                  <span class="db ovh">
-                    <img src="/homes/picture/5695fa940842492faeed129359066f7c.png" alt="12月圣诞节活动【限时】" class="db guodu"></span>
-                  <span class="span1 db one">12月圣诞节活动【限时】</span></a>
-              </div>
-              <div class="col-sm-4 paddingzhi">
-                <a href="http://www.dreamaker.com.cn/158.html" class="db a1 tc" title="卓美感恩节活动">
-                  <span class="db ovh">
-                    <img src="/homes/picture/7081bfa0deaf0cd773409c6a9ea5dea9.jpg" alt="卓美感恩节活动" class="db guodu"></span>
-                  <span class="span1 db one">卓美感恩节活动</span></a>
-              </div>
-              <div class="col-sm-4 paddingzhi">
-                <a href="http://www.dreamaker.com.cn/156.html" class="db a1 tc" title="11月感恩节活动【限时】">
-                  <span class="db ovh">
-                    <img src="/homes/picture/7081bfa0deaf0cd773409c6a9ea5dea9.jpg" alt="11月感恩节活动【限时】" class="db guodu"></span>
-                  <span class="span1 db one">11月感恩节活动【限时】</span></a>
-              </div>
-              <div class="col-sm-4 paddingzhi">
-                <a href="http://www.dreamaker.com.cn/170.html" class="db a1 tc" title="13-18岁课程">
-                  <span class="db ovh">
-                    <img src="/homes/picture/d5eec241b77ea556d1cf70cc203e0353.jpg" alt="13-18岁课程" class="db guodu"></span>
-                  <span class="span1 db one">13-18岁课程</span></a>
               </div>
             </section>
           </div>
@@ -203,7 +169,7 @@
         <div class="nr_R fr">
           <div class="nrxq_right">
             <div class="nrxq_main5 fix">
-              <p class="fl">卓美动态</p>
+              <p class="fl">童翼动态</p>
               <span class="fr">
                 <a href="http://www.dreamaker.com.cn/channel.html">更多</a></span>
             </div>
@@ -219,13 +185,9 @@
               <div class="nrxq_main6_3">
                 <ul>
                   <li>
-                    <a href="http://www.dreamaker.com.cn/181.html" title="卓美戏剧讲堂+亲子工作坊=做戏剧，我们是认真的！">卓美戏剧讲堂+亲子工作坊=做戏剧，我们是认真的！</a></li>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/155.html" title="卓美无戏剧不教育,以戏剧致学！">卓美无戏剧不教育,以戏剧致学！</a></li>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/154.html" title="卓美戏剧访谈：圣三一资深考官谈戏剧教育对孩子成长的价值">卓美戏剧访谈：圣三一资深考官谈戏剧教育对孩子成长的价</a></li>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/160.html" title="卓美品致西直门校区即将盛大开业！">卓美品致西直门校区即将盛大开业！</a></li>
+                    <a href="http://www.dreamaker.com.cn/181.html" title="卓美戏剧讲堂+亲子工作坊=做戏剧，我们是认真的！">卓美戏剧讲堂+亲子工作坊=做戏剧，我们是认真的！
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -236,7 +198,7 @@
               </div>
             </div>
             <div class="nrxq_main5 fix">
-              <p class="fl">卓美活动</p>
+              <p class="fl">童翼活动</p>
               <span class="fr">
                 <a href="http://www.dreamaker.com.cn/activity.html">更多</a></span>
             </div>
@@ -247,35 +209,16 @@
               </div>
               <div class="nrxq_main6_2">
                 <div class="div1">
-                  <a href="http://www.dreamaker.com.cn/178.html" 　title="2018卓美英文戏剧节">2018卓美英文戏剧节</a></div>
-                <div class="div2">2018年1月6日至20日
-                  <br>四部剧九场演出
-                  <br>经典新</div></div>
+                  <a href="http://www.dreamaker.com.cn/178.html" 　title="2018卓美英文戏剧节">2018卓美英文戏剧节</a>
+                </div>
+              </div>
               <div class="nrxq_main6_3">
                 <ul>
                   <li>
-                    <a href="http://www.dreamaker.com.cn/177.html" title="12月卓美剧团公演">12月卓美剧团公演</a></li>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/174.html" title="12月圣诞节活动【限时】">12月圣诞节活动【限时】</a></li>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/165.html" title="卓美冬令营【2018】">卓美冬令营【2018】</a></li>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/162.html" title="英文戏剧工作坊">英文戏剧工作坊</a></li>
+                    <a href="http://www.dreamaker.com.cn/177.html" title="12月卓美剧团公演">12月卓美剧团公演</a>
+                  </li>
                 </ul>
               </div>
-            </div>
-            <div class="nrxq_main5 fix">
-              <p class="fl">相关标签</p>
-              <span class="fr">
-                <a href="#">更多</a></span>
-            </div>
-            <div class="nrxq_main7">
-              <ul class="fix">
-                <li class="fl">
-                  <a href="http://www.dreamaker.com.cn/search/3-4%E5%B2%81%E8%AF%BE%E7%A8%8B" title="">3-4岁课程</a></li>
-                <li class="fl">
-                  <a href="http://www.dreamaker.com.cn/search/%E8%AF%BE%E7%A8%8B%E5%88%86%E9%98%B6" title="">课程分阶</a></li>
-              </ul>
             </div>
           </div>
         </div>

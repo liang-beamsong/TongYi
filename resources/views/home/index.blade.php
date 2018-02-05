@@ -181,7 +181,7 @@
       <div class="container-fluid youshi tc">
         @foreach($advantage as $k=>$v)
         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay=".0s">
-          <a href="#" target="_self" class="db rel">
+          <a href="/advantages/{{$v->id}}.html" target="_self" class="db rel">
             <span class="db ovh">
               <img src="{{$v->path}}" class="db guodu"></span>
             <span class="span1 db one">{{$v->title}}</span>
@@ -225,7 +225,7 @@
       <div class="container-fluid div_class">
         @foreach($curriculum as $k=>$v)
         <div class="col-md-6">
-          <a href="/hog.html" target="_self" title="HOG课程" class="db rel ovh">
+          <a href="/articles/{{$v->id}}.html" target="_self" title="HOG课程" class="db rel ovh">
             <img src="{{$v->path}}" class="db guodu">
             <span class="span_mc abs guodu"></span>
             <span class="span1 db abs">
@@ -253,7 +253,7 @@
             @foreach($activity as $k=>$v)
               <?php $num++?>
               @if($num == 1)
-              <a href="#" class="div_top db fix rel">
+              <a href="/activitys/{{$v->id}}.html" class="div_top db fix rel">
                 <span class="db abs span1 ovh">
                   <img src="{{$v->path}}" class="db guodu"></span>
                 <span class="span2 db">
@@ -265,12 +265,12 @@
                   @if($num == 2)
                      <ul class="div_ul">
                         <li>
-                          <a href="" class="db one guodu">{{$v->title}}</a>
+                          <a href="/activitys/{{$v->id}}.html" class="db one guodu">{{$v->title}}</a>
                           <span class="abs"><?php echo date('Y-m-d',$v->time)?></span>
                         </li>
                   @else
                         <li>
-                          <a href="" class="db one guodu">{{$v->title}}</a>
+                          <a href="/activitys/{{$v->id}}.html" class="db one guodu">{{$v->title}}</a>
                           <span class="abs"><?php echo date('Y-m-d',$v->time)?></span>
                         </li>
                   @endif
@@ -290,7 +290,7 @@
                 <ul>
                 @foreach($dynamic as $k=>$v)
                   <li class="fix">
-                    <a href="http://www.dreamaker.com.cn/183.html">
+                    <a href="/dynamics/{{$v->id}}.html">
                       <span class="span_left tc db abs">
                         <bdo class="bdo1 db guodu"><?php echo date('Y',$v->time)?></bdo>
                         <bdo class="bdo2 db"><?php echo date('m-d',$v->time)?></bdo></span>

@@ -56,3 +56,8 @@ Route::get('campus','Home\CampusController@index');
 Route::get('show','Home\ShowController@index');
 Route::get('course','Home\CourseController@index');
 Route::get('activity','Home\ActivityController@index');
+Route::get('articles/{id}.html','Home\ListController@article');
+Route::get('dynamics/{id}.html','Home\ListController@dynamic');
+Route::get('activitys/{id}.html','Home\ListController@activity');
+Route::get('advantages/{id}.html','Home\ListController@advantage');
+Route::get('partners/{id}.html','Home\ListController@partner');
