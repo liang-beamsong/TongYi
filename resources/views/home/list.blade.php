@@ -2,9 +2,9 @@
 <html>
   <head lang="en">
     <meta charset="utf-8">
-    <title>卓美戏剧3-4岁课程</title>
-    <meta name="keywords" content="卓美戏剧3-4岁课程">
-    <meta name="description" content="卓美戏剧3-4岁课程">
+    <title>{{$list->title}}</title>
+    <meta name="keywords" content="{{$list->keyword}}">
+    <meta name="description" content="{{$list->describe}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
@@ -133,9 +133,8 @@
     <!--other nav-->
     <section class="nr_bream">
       <section class="container pt30 pb20">
-        <a href='http://www.dreamaker.com.cn/'>首页</a>&gt;
-        <a href='http://www.dreamaker.com.cn/activity.html'>卓美活动</a>&gt;
-        <a class='on' href='http://www.dreamaker.com.cn/news/6.html'>最新活动</a></section>
+        <a href='/home'>首页</a>&gt;
+        <a href='javascript:void(0);'><?php echo PathName($path)?></a></section>
     </section>
     <section class="container ">
       <div class="nrxq_main nrxq_section_01 fix">
@@ -156,13 +155,14 @@
             </div>
             <div class="nrxq_main3">相关文章</div>
             <section class="nrxq_main4 pp_sec fix">
-
+              @foreach($relevant as $k=>$v)
               <div class="col-sm-4 paddingzhi">
-                <a href="http://www.dreamaker.com.cn/178.html" class="db a1 tc" title="2018卓美英文戏剧节">
+                <a href="/{{$path}}/{{$v->id}}.html" class="db a1 tc">
                   <span class="db ovh">
-                    <img src="/homes/picture/6590af11471bd196492971b43345a37d.jpg" alt="2018卓美英文戏剧节" class="db guodu"></span>
-                  <span class="span1 db one">2018卓美英文戏剧节</span></a>
+                    <img src="{{$v->path}}" class="db guodu"></span>
+                  <span class="span1 db one">{{$v->title}}</span></a>
               </div>
+              @endforeach
             </section>
           </div>
         </div>
@@ -171,52 +171,54 @@
             <div class="nrxq_main5 fix">
               <p class="fl">童翼动态</p>
               <span class="fr">
-                <a href="http://www.dreamaker.com.cn/channel.html">更多</a></span>
+                <a href="#">更多</a></span>
             </div>
             <div class="nrxq_main6">
               <div class="nrxq_main6_1">
-                <a href="http://www.dreamaker.com.cn/183.html" title="山东卫视《育儿大作战》登录卓美招募家庭喽！">
-                  <img src="/homes/picture/5023f6f79966513c304107f81e41cc91.png" alt="山东卫视《育儿大作战》登录卓美招募家庭喽！" class="db guodu"></a>
+                <a href="/dynamic/{{$dynamic[0]->id}}.html">
+                  <img src="{{$dynamic[0]->path}}" class="db guodu"></a>
               </div>
               <div class="nrxq_main6_2">
                 <div class="div1">
-                  <a href="http://www.dreamaker.com.cn/183.html" title="山东卫视《育儿大作战》登录卓美招募家庭喽！">山东卫视《育儿大作战》登录卓美招募家庭喽！</a></div>
-                <div class="div2">国内首档大型家长成长类真人秀——《育儿大作战》</div></div>
+                  <a href="/dynamic/{{$dynamic[0]->id}}.html">{{$dynamic[0]->title}}</a></div>
+              </div>
               <div class="nrxq_main6_3">
                 <ul>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/181.html" title="卓美戏剧讲堂+亲子工作坊=做戏剧，我们是认真的！">卓美戏剧讲堂+亲子工作坊=做戏剧，我们是认真的！
-                    </a>
-                  </li>
+                  @foreach($dynamic as $k=>$v)
+                      @if($v->id != $dynamic[0]->id)
+                        <li>
+                          <a href="/dynamic/{{$v->id}}.html">{{$v->title}}</a>
+                        </li>
+                      @endif 
+                  @endforeach
                 </ul>
               </div>
             </div>
-            <div class="nrxq_main6" style="margin-top:50px;">
-              <div class="nrxq_main6_1">
-                <a href="http://m.dreamaker.com.cn/shop/commodity/5a1404ce584eda40b693af0b" target="_blank">
-                  <img src="/homes/picture/b6a7676486b8b80b15af1cdb962bc22b.png" alt="" class="db guodu"></a>
-              </div>
-            </div>
+            
             <div class="nrxq_main5 fix">
               <p class="fl">童翼活动</p>
               <span class="fr">
-                <a href="http://www.dreamaker.com.cn/activity.html">更多</a></span>
+                <a href="#">更多</a></span>
             </div>
             <div class="nrxq_main6">
               <div class="nrxq_main6_1">
-                <a href="http://www.dreamaker.com.cn/178.html" title="2018卓美英文戏剧节">
-                  <img src="/homes/picture/6590af11471bd196492971b43345a37d.jpg" class="db guodu"></a>
+                <a href="/activity/{{$activity[0]->id}}.html" >
+                  <img src="{{$activity[0]->path}}" class="db guodu"></a>
               </div>
               <div class="nrxq_main6_2">
                 <div class="div1">
-                  <a href="http://www.dreamaker.com.cn/178.html" 　title="2018卓美英文戏剧节">2018卓美英文戏剧节</a>
+                  <a href="/activity/{{$activity[0]->id}}.html">{{$activity[0]->title}}</a>
                 </div>
               </div>
               <div class="nrxq_main6_3">
                 <ul>
-                  <li>
-                    <a href="http://www.dreamaker.com.cn/177.html" title="12月卓美剧团公演">12月卓美剧团公演</a>
-                  </li>
+                  @foreach($activity as $k=>$v)
+                      @if($v->id != $activity[0]->id)
+                        <li>
+                          <a href="/activity/{{$v->id}}.html">{{$v->title}}</a>
+                        </li>
+                      @endif
+                  @endforeach
                 </ul>
               </div>
             </div>
@@ -224,35 +226,6 @@
         </div>
       </div>
     </section>
-    <div class="c_fx">
-      <ul>
-        <!--href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.dreamaker.com.cn/"-->
-        <li>
-          <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">
-            <img src="/homes/picture/xq_tip_01.png" alt=""></a>
-        </li>
-        <li>
-          <a href="http://connect.qq.com/widget/shareqq/index.html?title=qqhaoyou&url=http://www.dreamaker.com.cn/&desc=卓美品致-国内儿童英文戏剧教育的领跑者&pics=&site=卓美品致-国内儿童英文戏剧教育的领跑者" target="_blank">
-            <img src="/homes/picture/xq_tip_02.png" alt=""></a>
-        </li>
-        <!--<li><a href="#"><img src="/homes/picture/xq_tip_03.png" alt=""></a></li>-->
-        <li>
-          <a href="http://v.t.sina.com.cn/share/share.php?url=http://www.dreamaker.com.cn/&title='卓美品致-国内儿童英文戏剧教育的领跑者'" target="_blank">
-            <img src="/homes/picture/xq_tip_04.png" alt=""></a>
-        </li>
-      </ul>
-    </div>
-    <script>function AddFavorite(sURL, sTitle) {
-        try {
-          window.external.addFavorite(sURL, sTitle);
-        } catch(e) {
-          try {
-            window.sidebar.addPanel(sTitle, sURL, "");
-          } catch(e) {
-            alert("加入收藏失败，请使用Ctrl+D进行添加");
-          }
-        }
-      }</script>
     <section class="baoming">
       <div class="container">
         <div class="div1 fix rel">

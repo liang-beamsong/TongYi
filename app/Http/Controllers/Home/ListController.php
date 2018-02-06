@@ -42,6 +42,17 @@ class ListController extends Controller
     	$previousId = DB::table($data)->where('id','<',$id)->max('id');
     	$next = DB::table($data)->where('id',$nextId)->first();
     	$previous = DB::table($data)->where('id',$previousId)->first();
-    	return view('home.list',['list'=>$list,'previous'=>$previous,'next'=>$next,'path'=>$path]);
+    	$relevant = DB::table($data)->orderBy('id','desc')->limit(6)->get();
+    	$dynamic = DB::table('ty_dynamic')->orderBy('id','desc')->limit(8)->get();
+    	$activity = DB::table('ty_activity')->orderBy('id','desc')->limit(8)->get();
+    	return view('home.list',[
+    		'list'=>$list,
+    		'previous'=>$previous,
+    		'next'=>$next,
+    		'path'=>$path,
+    		'relevant'=>$relevant,
+    		'dynamic'=>$dynamic,
+    		'activity'=>$activity,
+    	]);
     }
 }

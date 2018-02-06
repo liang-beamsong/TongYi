@@ -3,9 +3,9 @@
   
   <head lang="en">
     <meta charset="utf-8">
-    <title>卓美青少儿英文戏剧校区地址_地图_电话_预约试课-卓美品致</title>
-    <meta name="keywords" content="卓美全国校区分布,幼儿英语戏剧校区,少儿英语戏剧校区,儿童英语戏剧校区,卓美校区">
-    <meta name="description" content="卓美品致为您提供全国全面详实的幼儿英语戏剧校区地图,为您提供各个少儿英语戏剧校区的具体地址、来校路线以及儿童英语戏剧校区联系电话,点击了解详细乘车路线!">
+    <title>{{$campus->title}}</title>
+    <meta name="keywords" content="{{$campus->keyword}}">
+    <meta name="description" content="{{$campus->describe}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
@@ -130,269 +130,51 @@
   </head>
   
   <body class="body xz ">
+    <link rel="stylesheet" href="/homes/css/media-zl.css" />
     @extends('layout.header')
-    <script type="text/javascript" src="/homes/js/667a5f9a5ed749d29028eef43ad5d1b8.js"></script>
-    <section class="fb_banner ovh huan_bg rel" data-bg="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170721/188f9d52849231fbc3ad36c811e26846.jpg" data-bg2="images/a18e44c5b1d08d851643680535dd6e0f.jpg" style=" background: url('http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170721/a18e44c5b1d08d851643680535dd6e0f.jpg') center top no-repeat;">
-      <div class="container">
-        <div class="fb_div1">
-          <b class="db b1">请选择城市</b>
-          <div class="select_01 select">
-            <select class="ui-select" style="width: 100%;" onchange="change(this.value)">
-              <option selected value="1">北京</option>
-              <option value="2">上海</option>
-              <option value="13">重庆</option>
-              <option value="16">青岛</option>
-              <option value="34">石家庄</option>
-              <option value="37">沈阳</option>
-              <option value="40">郑州</option></select>
-          </div>
-          <div class="div1 fix">
-            <a href="http://www.dreamaker.com.cn/campus/1/3.html" class="xz">朝阳</a>
-            <a href="http://www.dreamaker.com.cn/campus/1/4.html">海淀</a></div>
-          <div class="div2 fix">
-            <a href="http://www.dreamaker.com.cn/campus/1/3/21.html" class="xz">北京双井校区</a>
-            <a href="http://www.dreamaker.com.cn/campus/1/3/6.html">北京望京校区</a>
-            <a href="http://www.dreamaker.com.cn/campus/1/3/23.html">北京亚运村校区</a>
-            <a href="http://www.dreamaker.com.cn/campus/1/3/9.html">北京常营校区</a></div>
+    <section class="kc_banner huan_bg rel" data-bg="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170808/bcd2719ea98c41a14ae2b44663b8ff22.jpg" data-bg2="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170715/eb2483b4119309b7bb0d466f90dee5b6.jpg" style="background: url(&quot;http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170715/eb2483b4119309b7bb0d466f90dee5b6.jpg&quot;) center top / cover no-repeat;">
+        <div class="container">
+          <span class="db span1">让孩子成为自己的人生导演</span>
+          <span class="db span2 two">
+            接受过戏剧表演培训的孩子，通常能更好的处理问题，有强烈的自信， 以及清晰的语言表达能力，从而他们的生活会更美好！    </span>
         </div>
-        <div class="fb_map abs">
-          <img src="/homes/picture/fb_map.png" alt="" class="mg1">
-          <a class="anchor a-1 about_dw_1">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_2">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_3">
-            <span class="bg"></span>
-          </a>
-          <!-- <a class="anchor a-1 about_dw_4">
-          <span class="bg"></span></a> -->
-          <a class="anchor a-1 about_dw_5">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_6">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_7">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_8">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_9">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_10">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_11">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_12">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_13">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_14">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_15">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_16">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_17">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_18">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_19">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_20">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_21">
-            <span class="bg"></span>
-          </a>
-          <!-- <a class="anchor a-1 about_dw_22">
-          <span class="bg"></span></a> -->
-          <a class="anchor a-1 about_dw_23">
-            <span class="bg"></span>
-          </a>
-          <!-- <a class="anchor a-1 about_dw_24">
-          <span class="bg"></span></a> -->
-          <a class="anchor a-1 about_dw_25">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_26">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_27">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_28">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_29">
-            <span class="bg"></span>
-          </a>
-          <a class="anchor a-1 about_dw_30">
-            <span class="bg"></span>
-          </a>
+        <a href="#" target="_self" class="banner_mc abs"></a>
+    </section>
+    <section class="container" style="font-size: 15px;">
+        <div style="margin-top: 50px;"></div>
+        <div class="title tc mb35">
+          <span class="span1 db">{{$campus->title}}</span>
+          <span class="span2 db fa">{{$campus->describe}}</span>
         </div>
-      </div>
+        <div class="mod-02 tc mb35">{!!$campus->content!!}</div>
+      
     </section>
-    <section class="fb_map2 rel">
-      <div class="fb_mapp">
-        <div id="allmap"></div>
-      </div>
-      <!--<img src="/homes/picture/fb_map2.jpg" alt="" class="db auto">-->
-      <!-- <div class="fb_map_abs">
-      <div class="container"> -->
-      <div class="div1 fb_map_div1">
-        <div class="divv1 tr fix">
-          <a href="http://www.dreamaker.com.cn/campus/view/21.html" style="color:#000;">
-            <b class="fl">北京双井校区</b></a>
-          <a href="http://www.dreamaker.com.cn/campus/view/21.html">查看校区详情 ></a></div>
-        <a href="http://www.dreamaker.com.cn/campus/view/21.html">
-          <img src="/homes/picture/e7afa427a12d6214f0deb84e9602d64d.jpg" class="db mg1"></a>
-        <ul>
-          <li>
-            <a href="http://www.dreamaker.com.cn/campus/view/21.html">
-              <img src="/homes/picture/fb_tip_01.png" alt="" class="abs mg2">
-              <span>地址：</span>北京朝阳区东三环中路双井富力广场四层429</a></li>
-          <li>
-            <img src="/homes/picture/fb_tip_02.png" alt="" class="abs mg2">
-            <span>联系电话：</span>010-56137077</li>
-          <li>
-            <img src="/homes/picture/fb_tip_03.png" alt="" class="abs mg2">
-            <span>近期活动：</span>
-            <a href="/165.html" target="_blank">五天戏剧营，激发孩子无限潜能！</a></li>
-        </ul>
-      </div>
-      <!-- </div></div> -->
-    </section>
-    <section class="hog_section_07">
-      <div class="title tc container">
-        <span class="span1 db">Drama时刻</span>
-        <span class="span2 db fa">Drama time</span></div>
-      <div class="title_bdo tc">
-        <b class="b1 db">真体验 · 真感受 · 真分享</b></div>
-      <div class="container">
-        <div class="hog_time fix">
-          <div class="col-sm-4">
-            <a href="javascript:void(0)" class="a1 db ovh rel video" attr="http://www.dreamaker.com.cn/static/upfile/videos/file/20170801/drama1.mp4">
-              <img src="/homes/picture/7485c97f3622e7ca0d02b855618e7a3b.jpg" class="db mg1 guodu ">
-              <span class="span1 abs">
-                <img src="/homes/picture/tip_05.png" class="db"></span>
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="javascript:void(0)" class="a1 db ovh rel video" attr="http://www.dreamaker.com.cn/static/upfile/videos/file/20170802/theatre.mp4">
-              <img src="/homes/picture/1b6d293ac175c73b0ffd61a993e90da6.jpg" class="db mg1 guodu ">
-              <span class="span1 abs">
-                <img src="/homes/picture/tip_05.png" class="db"></span>
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="javascript:void(0)" class="a1 db ovh rel video" attr="http://www.dreamaker.com.cn/static/upfile/videos/file/20170802/53m.mp4">
-              <img src="/homes/picture/21755c62a7030b13ef4315396c71080d.jpg" class="db mg1 guodu ">
-              <span class="span1 abs">
-                <img src="/homes/picture/tip_05.png" class="db"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="y_bg_mc"></section>
-    <section class="y_v_tc">
-      <div id="video"></div>
-      <img src="/homes/picture/cha2.png" alt="" class="mg2 db guodu abs"></section>
-    <script>$('.video').click(function() {
-        var url = $(this).attr('attr');
-        if (url) {
-          $("#video").html('<video autoplay="autoplay" src=' + url + ' width="100%" height="100%"  controls="controls" loop="loop" ></video>');
-          $('.y_v_tc').show();
-          $('.y_bg_mc').show();
+    <script>var decimal_places = 0;
+      var decimal_factor = decimal_places === 0 ? 1 : decimal_places * 100;
+      var bianliang = 0;
+      $(window).scroll(function() {
+        if ($(window).scrollTop() >= ($('.mod-03').offset().top) - 600 && bianliang == 0) {
+          bianliang = 1;
+          $('.decimals').each(function() {
+            var datashu = $(this).attr('data-shu');
+            $(this).animateNumber({
+              number: datashu * decimal_factor,
+              numberStep: function(now, tween) {
+                var floored_number = parseInt(now / decimal_factor),
+                target = $(tween.elem);
+                if (decimal_places > 0) {
+                  // force decimal places even if they are 0
+                  floored_number = floored_number.toFixed(decimal_places);
+                  // replace '.' separator with ','
+                  floored_number = floored_number.toString().replace('.', '.');
+                }
+                target.text(floored_number);
+              }
+            },
+            1500);
+          })
         }
       })</script>
-    <script>function change(value) {
-        if (value > 0) {
-          location.href = "http://www.dreamaker.com.cn/campus/" + value + ".html";
-        }
-      }</script>
-    </section>
-    <script type="text/javascript">var map = new BMap.Map("allmap");
-      map.addControl(new BMap.NavigationControl());
-      map.enableScrollWheelZoom(); //启用滚轮放大缩小，默认禁用
-      var myGeo = new BMap.Geocoder();
-      myGeo.getPoint("北京朝阳区东三环中路双井富力广场四层429",
-      function(point) {
-        if (point) {
-          map.centerAndZoom(point, 11);
-        }
-      });
-      function setCenter(city) {
-        myGeo.getPoint(city,
-        function(point) {
-          if (point) {
-            map.centerAndZoom(point, 11);
-          }
-        });
-      }
-      var index = 0;
-      var myGeo = new BMap.Geocoder();
-      var adds = [["北京朝阳区东三环中路双井富力广场四层429"], ];
-      var opts = {
-        width: 250,
-        // 信息窗口宽度
-        height: 120,
-        // 信息窗口高度
-        title: "",
-        // 信息窗口标题
-        enableMessage: false //设置允许信息窗发送短息
-      };
-      function bdGEO() {
-        var add = adds[index];
-        geocodeSearch(add[0], add[1]);
-        index++;
-      }
-      bdGEO();
-      function geocodeSearch(add, gs_name) {
-        if (index < adds.length) {
-          setTimeout(window.bdGEO, 400);
-        }
-        myGeo.getPoint(add,
-        function(point) {
-          if (point) {
-            var address = new BMap.Point(point.lng, point.lat);
-
-            var marker = new BMap.Marker(address); // 创建标注
-            var content = gs_name;
-            map.addOverlay(marker); // 将标注添加到地图中
-            marker.addEventListener("click", openInfo.bind(null, content));
-            //addMarker(address,new BMap.Label(index+":"+add,{offset:new BMap.Size(20,-10)}));
-          }
-        },
-        "中国");
-      }
-      // 编写自定义函数,创建标注
-      function addMarker(point, label) {
-        var marker = new BMap.Marker(point);
-        map.addOverlay(marker);
-        marker.setLabel(label);
-      }
-      function openInfo(content, e) {
-        var p = e.target;
-        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
-        var infoWindow = new BMap.InfoWindow(content, opts); // 创建信息窗口对象 
-        map.openInfoWindow(infoWindow, point); //开启信息窗口
-      }</script>
     <section class="baoming">
       <div class="container">
         <div class="div1 fix rel">
@@ -476,4 +258,4 @@
     },
     "share": {}
   };
- </script>
+</script>

@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use DB;
 class CampusController extends Controller
 {
     public function index()
     {
-    	return view('home.campus');
+    	$campus = DB::table('ty_company')->where('id',3)->first();
+    	return view('home.campus',['campus'=>$campus]);
     }
 }

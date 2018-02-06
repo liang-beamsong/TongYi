@@ -55,6 +55,7 @@ Route::get('about','Home\AboutController@index');
 Route::get('campus','Home\CampusController@index');
 Route::get('show','Home\ShowController@index');
 Route::get('course','Home\CourseController@index');
+Route::post('course','Home\CourseController@index');
 Route::get('activity','Home\ActivityController@index');
 Route::get('articles/{id}.html','Home\ListController@article');
 Route::get('dynamics/{id}.html','Home\ListController@dynamic');

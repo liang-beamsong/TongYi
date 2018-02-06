@@ -131,7 +131,7 @@
   
   <body class="body xz ">
     @extends('layout.header')
-    <section class="kc_banner huan_bg rel" data-bg="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170808/bcd2719ea98c41a14ae2b44663b8ff22.jpg" data-bg2="images/eb2483b4119309b7bb0d466f90dee5b6.jpg" style="background:url('http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170715/eb2483b4119309b7bb0d466f90dee5b6.jpg') center center no-repeat;">
+    <section class="kc_banner huan_bg rel" data-bg="/homes/images/eb2483b4119309b7bb0d466f90dee5b6.jpg" data-bg2="/homes/images/eb2483b4119309b7bb0d466f90dee5b6.jpg">
       <div class="container">
         <span class="db span1">让孩子成为自己的人生导演</span>
         <span class="db span2 two">接受过戏剧表演培训的孩子，通常能更好的处理问题，有强烈的自信， 以及清晰的语言表达能力，从而他们的生活会更美好！</span></div>
@@ -143,136 +143,34 @@
     </section>
     <section class="kc_section_01">
       <div class="container fix">
-        <form name="form1" id="form1" method="post" action="http://www.dreamaker.com.cn/course" class="for">
+        <form  method="post" action="/course">
           <div class="div1 fl">
             <div class="divv1">
-              <div class="select_01 select">
-                <select class="ui-select" style="width: 100%;" name="catid">
-                  <option value="">全部</option>
-                  <option value="48">3岁</option>
-                  <option value="13">4岁</option>
-                  <option value="14">5岁</option>
-                  <option value="16">6岁</option>
-                  <option value="17">7岁</option>
-                  <option value="29">8岁</option>
-                  <option value="30">9岁</option>
-                  <option value="31">10岁</option>
-                  <option value="32">11岁</option>
-                  <option value="33">12岁</option>
-                  <option value="34">13岁</option>
-                  <option value="35">14岁</option>
-                  <option value="36">15岁</option>
-                  <option value="37">16岁</option>
-                  <option value="38">17岁</option>
-                  <option value="39">18岁</option></select>
-              </div>
+              <input type="text" name='title' class="select_01 select"  style="width: 100%;"/>
             </div>
           </div>
           <div class="div2 fl">
-            <input type="submit" class="but_01" value="立即查看课程"></div>
+            <input type="submit" class="but_01" value="搜索课程"></div>
         </form>
       </div>
     </section>
     <section class="container">
       <section class="kc_section_02 fix">
+      @foreach($course as $k=>$v)
         <div class="col-md-4 col-sm-6">
-          <a href="/166.html" title="3-4岁课程" class="db a1 tc">
+          <a href="/articles/{{$v->id}}.html"  class="db a1 tc">
             <span class="db ovh">
-              <img src="/homes/picture/92c09ea0527a3d63a467aa1ad123360f.jpg" class="db guodu"></span>
-            <span class="span1 db one">3-4岁课程</span>
-            <span class="span2 db one">多元主题启蒙，开发快乐潜能！</span></a>
+              <img src="{{$v->path}}" class="db guodu"></span>
+            <span class="span1 db one">{{$v->title}}</span>
+            <span class="span2 db one">{{$v->describe}}</span></a>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <a href="/167.html" title="4-6岁课程" class="db a1 tc">
-            <span class="db ovh">
-              <img src="/homes/picture/c01e04433cac3738e40ce02325641245.jpg" class="db guodu"></span>
-            <span class="span1 db one">4-6岁课程</span>
-            <span class="span2 db one">尊重孩子独特性，让快乐＞学习！</span></a>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <a href="/168.html" title="7-9岁课程" class="db a1 tc">
-            <span class="db ovh">
-              <img src="/homes/picture/3306c279ae04ad73618dec633f6dc42c.jpg" class="db guodu"></span>
-            <span class="span1 db one">7-9岁课程</span>
-            <span class="span2 db one">交互式语言教学，培养表达领袖！</span></a>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <a href="/169.html" title="10-12岁课程" class="db a1 tc">
-            <span class="db ovh">
-              <img src="/homes/picture/9fd7f57276d411f0c3b834b03c4f08ac.jpg" class="db guodu"></span>
-            <span class="span1 db one">10-12岁课程</span>
-            <span class="span2 db one">快乐的学习方式并非输入，而是输出！</span></a>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <a href="/170.html" title="13-18岁课程" class="db a1 tc">
-            <span class="db ovh">
-              <img src="/homes/picture/5839418878f5a55c68f30707c5047358.jpg" class="db guodu"></span>
-            <span class="span1 db one">13-18岁课程</span>
-            <span class="span2 db one">在舞台中央绽放自己的豆蔻年华！</span></a>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <a href="/165.html" title="5天戏剧营（5岁及以上）" class="db a1 tc">
-            <span class="db ovh">
-              <img src="/homes/picture/28adf055bb692754b9975b1865c313d4.png" class="db guodu"></span>
-            <span class="span1 db one">5天戏剧营（5岁及以上）</span>
-            <span class="span2 db one">5天戏剧营，让孩子创造一个奇迹！</span></a>
-        </div>
+      @endforeach
       </section>
+      <div style="float:right;">{!! $course->appends($request->only(['list_length','title']))->render() !!} </div>
+      
     </section>
     <section class="baoming">
-      <div class="container">
-        <div class="div1 fix rel">
-          <!--<b class="b1"><img src="/homes/picture/phone.png" alt="">4006781872 转 1</b>-->
-          <form name="form2" class="registerform2" id="form2" method="post" action="http://www.dreamaker.com.cn/message/saveAjax2">
-            <div class="divv1 fix">
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[mname]" placeholder="请输入姓名！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[age]" placeholder="请输入孩子年龄！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[tel]" nullmsg="请填写您的手机号" errormsg="请您填写11位手机号" placeholder="填写11位手机号" datatype="m"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <div class="select_01 select">
-                    <select class="ui-select" name="info[xiaoqu_id]" style="width: 100%;" datatype="*" nullmsg="请您选择咨询校区">
-                      <option value="">请您选择咨询校区</option>
-                      <option value="19">北京牡丹园校区</option>
-                      <option value="32">北京西直门校区</option>
-                      <option value="21">北京双井校区</option>
-                      <option value="20">北京公主坟校区</option>
-                      <option value="6">北京望京校区</option>
-                      <option value="22">北京金源校区</option>
-                      <option value="23">北京亚运村校区</option>
-                      <option value="9">北京常营校区</option>
-                      <option value="12">上海五角场校区</option>
-                      <option value="14">上海徐家汇校区</option>
-                      <option value="26">上海古北校区</option>
-                      <option value="36">石家庄长安校区</option>
-                      <option value="39">沈阳K11校区</option>
-                      <option value="42">郑州蓝堡湾校区</option>
-                      <option value="27">重庆渝北校区</option>
-                      <option value="28">青岛五四广场校区</option></select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divv2">
-              <div class="div_put2 rel">
-                <input type="text" class="put_public put_02" name="txtCode" datatype="*" nullmsg="请输入验证码" placeholder="请输入验证码">
-                <img src="/homes/picture/6c025acc7e6d46f783e49246d35db143.gif" width="83" height="30" class="abs bm_yzm" onClick="this.src='http://www.dreamaker.com.cn/utils/captcha/'+Math.random();"></div>
-            </div>
-            <span id="msgdemo3" style="margin-top:5px;"></span>
-            <input type="hidden" name="info[from]" value="">
-            <input type="hidden" name="info[url]" value="www.dreamaker.com.cn/course.html">
-            <input type="submit" class="put_public but_01" value="立即报名"></form>
-        </div>
-      </div>
+      
     </section>
     @extends('layout.footer')
   </body>
