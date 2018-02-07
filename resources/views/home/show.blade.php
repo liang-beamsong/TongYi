@@ -19,6 +19,7 @@
     <!-- <script src="/homes/js/owl.carousel.min.js"></script> -->
     <!-- <link rel="stylesheet" href="/homes/css/main.css"/>-->
     <link rel="stylesheet" href="/homes/css/style.css" />
+    <link rel="stylesheet" href="/homes/css/styles.css" />
     <link rel="stylesheet" href="/homes/css/media.css" />
     <!-- <script src="/homes/js/jquery-1.11.2.min.js"></script> -->
     <script src="/homes/js/jquery.min.js"></script>
@@ -147,89 +148,38 @@
           <span class="span2 db fa">{{$show->describe}}</span>
         </div>
         <div class="mod-02 tc mb35">{!!$show->content!!}</div>
-      
-    </section>
-    <script>var decimal_places = 0;
-      var decimal_factor = decimal_places === 0 ? 1 : decimal_places * 100;
-      var bianliang = 0;
-      $(window).scroll(function() {
-        if ($(window).scrollTop() >= ($('.mod-03').offset().top) - 600 && bianliang == 0) {
-          bianliang = 1;
-          $('.decimals').each(function() {
-            var datashu = $(this).attr('data-shu');
-            $(this).animateNumber({
-              number: datashu * decimal_factor,
-              numberStep: function(now, tween) {
-                var floored_number = parseInt(now / decimal_factor),
-                target = $(tween.elem);
-                if (decimal_places > 0) {
-                  // force decimal places even if they are 0
-                  floored_number = floored_number.toFixed(decimal_places);
-                  // replace '.' separator with ','
-                  floored_number = floored_number.toString().replace('.', '.');
-                }
-                target.text(floored_number);
-              }
-            },
-            1500);
-          })
-        }
-      })</script>
-    <section class="baoming">
-      <div class="container">
-        <div class="div1 fix rel">
-          <!--<b class="b1"><img src="/homes/picture/phone.png" alt="">4006781872 转 1</b>-->
-          <form name="form2" class="registerform2" id="form2" method="post" action="http://www.dreamaker.com.cn/message/saveAjax2">
-            <div class="divv1 fix">
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[mname]" placeholder="请输入姓名！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[age]" placeholder="请输入孩子年龄！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[tel]" nullmsg="请填写您的手机号" errormsg="请您填写11位手机号" placeholder="填写11位手机号" datatype="m"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <div class="select_01 select">
-                    <select class="ui-select" name="info[xiaoqu_id]" style="width: 100%;" datatype="*" nullmsg="请您选择咨询校区">
-                      <option value="">请您选择咨询校区</option>
-                      <option value="19">北京牡丹园校区</option>
-                      <option value="32">北京西直门校区</option>
-                      <option value="21">北京双井校区</option>
-                      <option value="20">北京公主坟校区</option>
-                      <option value="6">北京望京校区</option>
-                      <option value="22">北京金源校区</option>
-                      <option value="23">北京亚运村校区</option>
-                      <option value="9">北京常营校区</option>
-                      <option value="12">上海五角场校区</option>
-                      <option value="14">上海徐家汇校区</option>
-                      <option value="26">上海古北校区</option>
-                      <option value="36">石家庄长安校区</option>
-                      <option value="39">沈阳K11校区</option>
-                      <option value="42">郑州蓝堡湾校区</option>
-                      <option value="27">重庆渝北校区</option>
-                      <option value="28">青岛五四广场校区</option></select>
-                  </div>
-                </div>
-              </div>
+        <div id="wrap">
+            <div id='form_wrap'>
+                <form class="form">
+                    <p>Hi,Message!</p>
+                    <label for="email">Content: </label>
+                    <textarea  name="content" value="Your Message" id="content" ></textarea>
+                    <label for="name">Name: </label>
+                    <input class="text" type="text" name="title" value="" id="title" />
+                    <label for="email">Contact: </label>
+                    <input class="text" type="text" name="contact" value="" id="contact" />
+                    <input class="text" type="submit" value="Submit" onclick="messages();return false;" />
+                </form>
             </div>
-            <div class="divv2">
-              <div class="div_put2 rel">
-                <input type="text" class="put_public put_02" name="txtCode" datatype="*" nullmsg="请输入验证码" placeholder="请输入验证码">
-                <img src="/homes/picture/6c025acc7e6d46f783e49246d35db143.gif" width="83" height="30" class="abs bm_yzm" onClick="this.src='http://www.dreamaker.com.cn/utils/captcha/'+Math.random();"></div>
-            </div>
-            <span id="msgdemo3" style="margin-top:5px;"></span>
-            <input type="hidden" name="info[from]" value="">
-            <input type="hidden" name="info[url]" value="www.dreamaker.com.cn/show.html">
-            <input type="submit" class="put_public but_01" value="立即报名"></form>
         </div>
-      </div>
     </section>
+    <script>
+          function messages()
+          {
+            var title = $('#title').val();
+            var content = $('#content').val(); 
+            var contact = $('#contact').val(); 
+            $.post('/messages/insert', {'title':title,'contact':contact,'content':content}, function(data){
+              var data = JSON.parse(data);
+              if(data.status == '502'){
+                  alert('留言失败');
+              }else if(data.status == '200'){
+                  alert('留言成功');
+                  $('#contact,#content,#title').val(''); 
+              }
+            });
+          }
+  </script>
     @extends('layout.footer')
   </body>
 </html>

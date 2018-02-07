@@ -3,9 +3,9 @@
   
   <head lang="en">
     <meta charset="utf-8">
-    <title>卓美英文戏剧课程给3-18岁的青少儿带来了全新的成长方式-卓美品致</title>
-    <meta name="keywords" content="卓美课程,戏剧课程,英文戏剧课程,儿童戏剧课程,儿童戏剧培训,少儿戏剧培,英语戏剧">
-    <meta name="description" content="卓美Helen O' Grady儿童戏剧培训学院引进全球领先的儿童戏剧课程，针对4-18岁的孩子进行专业的英文戏剧教育培训，在青少儿英语戏剧培训领域深受家长和孩子欢迎。">
+    <title>童翼课程</title>
+    <meta name="keywords" content="童翼课程,童翼课程列表,最新课程">
+    <meta name="description" content="童翼课程,童翼课程列表,最新课程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
@@ -167,9 +167,6 @@
       @endforeach
       </section>
       <div style="float:right;">{!! $course->appends($request->only(['list_length','title']))->render() !!} </div>
-      
-    </section>
-    <section class="baoming">
       
     </section>
     @extends('layout.footer')

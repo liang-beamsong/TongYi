@@ -15,6 +15,8 @@ Route::get('/', function () {
     return redirect('home');
 });
 
+
+
 /**
  * 后台路由组
  */
@@ -48,17 +50,39 @@ Route::get('admin/login','Admin\LoginController@index');
 Route::post('admin/login','Admin\LoginController@login');
 
 /**
- * 前台栏目
+ * 前台栏目单页
  */
 Route::get('home','Home\IndexController@index');
 Route::get('about','Home\AboutController@index');
 Route::get('campus','Home\CampusController@index');
 Route::get('show','Home\ShowController@index');
-Route::get('course','Home\CourseController@index');
-Route::post('course','Home\CourseController@index');
+
+/**
+ * 文章列表栏目
+ */
+Route::get('article','Home\CourseController@index');
+Route::post('article','Home\CourseController@index');
 Route::get('activity','Home\ActivityController@index');
+Route::post('activity','Home\ActivityController@index');
+Route::get('dynamic','Home\DynamicController@index');
+Route::post('dynamic','Home\DynamicController@index');
+Route::get('partner','Home\PartnerController@index');
+Route::post('partner','Home\PartnerController@index');
+Route::get('advantage','Home\AdvantageController@index');
+Route::post('advantage','Home\AdvantageController@index');
+
+/**
+ * 文章内页
+ */
 Route::get('articles/{id}.html','Home\ListController@article');
 Route::get('dynamics/{id}.html','Home\ListController@dynamic');
 Route::get('activitys/{id}.html','Home\ListController@activity');
 Route::get('advantages/{id}.html','Home\ListController@advantage');
 Route::get('partners/{id}.html','Home\ListController@partner');
+
+/**
+ * 前台留言
+ */
+Route::post('messages/insert','Home\messageController@insert');
+Route::post('messages/signup','Home\messageController@signup');
+

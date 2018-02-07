@@ -21,13 +21,26 @@
         <h3 class="panel-title">{{$v->title}}</h3>
         <div class="actions pull-right">
           <i class="fa fa-chevron-down"></i>
-          <i class="fa fa-times"></i>
+          <i class="fa fa-times" onclick="deletes('{{$v->id}}');"></i>
         </div>
       </div>
       <div class="panel-body">{{$v->content}}</div>
-      <div class="panel-footer">手机:{{$v->phone}}  时间:<?php echo date('Y-m-d H:i',$v->time)?> 邮箱: {{$v->email}}</div>
+      <div class="panel-footer">联系方式: {{$v->contact}} 时间:<?php echo date('Y-m-d H:i',$v->time)?> </div>
     </div>
   </div>
+<script>
+  function deletes(id)
+  {
+    $.get('/message/dele', {'id':id}, function(data){
+        var data = JSON.parse(data);
+        if(data.status == '502'){
+          alert('删除失败');
+        }else if(data.status == '200'){
+          location.href='/message/list';
+        }
+    });
+  }
+</script>
   @endforeach
 </div>
 </section>

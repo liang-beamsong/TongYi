@@ -175,61 +175,6 @@
           })
         }
       })</script>
-    <section class="baoming">
-      <div class="container">
-        <div class="div1 fix rel">
-          <!--<b class="b1"><img src="/homes/picture/phone.png" alt="">4006781872 转 1</b>-->
-          <form name="form2" class="registerform2" id="form2" method="post" action="http://www.dreamaker.com.cn/message/saveAjax2">
-            <div class="divv1 fix">
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[mname]" placeholder="请输入姓名！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[age]" placeholder="请输入孩子年龄！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[tel]" nullmsg="请填写您的手机号" errormsg="请您填写11位手机号" placeholder="填写11位手机号" datatype="m"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <div class="select_01 select">
-                    <select class="ui-select" name="info[xiaoqu_id]" style="width: 100%;" datatype="*" nullmsg="请您选择咨询校区">
-                      <option value="">请您选择咨询校区</option>
-                      <option value="19">北京牡丹园校区</option>
-                      <option value="32">北京西直门校区</option>
-                      <option value="21">北京双井校区</option>
-                      <option value="20">北京公主坟校区</option>
-                      <option value="6">北京望京校区</option>
-                      <option value="22">北京金源校区</option>
-                      <option value="23">北京亚运村校区</option>
-                      <option value="9">北京常营校区</option>
-                      <option value="12">上海五角场校区</option>
-                      <option value="14">上海徐家汇校区</option>
-                      <option value="26">上海古北校区</option>
-                      <option value="36">石家庄长安校区</option>
-                      <option value="39">沈阳K11校区</option>
-                      <option value="42">郑州蓝堡湾校区</option>
-                      <option value="27">重庆渝北校区</option>
-                      <option value="28">青岛五四广场校区</option></select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divv2">
-              <div class="div_put2 rel">
-                <input type="text" class="put_public put_02" name="txtCode" datatype="*" nullmsg="请输入验证码" placeholder="请输入验证码">
-                <img src="/homes/picture/6c025acc7e6d46f783e49246d35db143.gif" width="83" height="30" class="abs bm_yzm" onClick="this.src='http://www.dreamaker.com.cn/utils/captcha/'+Math.random();"></div>
-            </div>
-            <span id="msgdemo3" style="margin-top:5px;"></span>
-            <input type="hidden" name="info[from]" value="">
-            <input type="hidden" name="info[url]" value="www.dreamaker.com.cn/about.html">
-            <input type="submit" class="put_public but_01" value="立即报名"></form>
-        </div>
-      </div>
-    </section>
     @extends('layout.footer')
   </body>
 </html>

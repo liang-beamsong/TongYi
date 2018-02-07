@@ -156,6 +156,8 @@
                         <ul>
                             <li><a href="/message/list">留言列表</a>
                             </li>
+                            <li><a href="/message/siglist">报名列表</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="sub-menu">

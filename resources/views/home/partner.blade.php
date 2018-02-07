@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+  
   <head lang="en">
     <meta charset="utf-8">
-    <title>{{$list->title}}</title>
-    <meta name="keywords" content="{{$list->keyword}}">
-    <meta name="description" content="{{$list->describe}}">
+    <title>合作伙伴</title>
+    <meta name="keywords" content="合作伙伴,合作伙伴,合作伙伴">
+    <meta name="description" content="合作伙伴,合作伙伴,合作伙伴">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
@@ -129,105 +130,47 @@
   </head>
   
   <body class="body xz ">
-@extends('layout.header')
-    <!--other nav-->
-    <section class="nr_bream">
-      <section class="container pt30 pb20">
-        <a href='/home'>首页</a>&gt;
-        <a href='javascript:void(0);'><?php echo PathName($path)?></a></section>
+    @extends('layout.header')
+    <section class="kc_banner huan_bg rel" data-bg="/homes/images/eb2483b4119309b7bb0d466f90dee5b6.jpg" data-bg2="/homes/images/eb2483b4119309b7bb0d466f90dee5b6.jpg">
+      <div class="container">
+        <span class="db span1">让孩子成为自己的人生导演</span>
+        <span class="db span2 two">接受过戏剧表演培训的孩子，通常能更好的处理问题，有强烈的自信， 以及清晰的语言表达能力，从而他们的生活会更美好！</span></div>
+      <a href="#" target="_self" class="banner_mc abs"></a>
     </section>
-    <section class="container ">
-      <div class="nrxq_main nrxq_section_01 fix">
-        <div class="nr_L fl">
-          <div class="nrxq_left">
-            <div class="nr_title">
-              {{$list->title}}
-              <bdo class="db">来源：童翼官网 编辑：童翼官方编辑 时间：<?php echo date('Y-m-d',$list->time)?></bdo>
-              </div>
-            <div class="nrxq_main1">
-                {!!$list->content!!}
-              </div>
-            <div class="nrxq_main2 fix">
-              <span class="fl">上一篇：
-                <a href="@if($previous) /{{$path}}/{{$previous->id}}.html @else javascript:void(0); @endif">@if($previous) {{$previous->title}} @else 没有了 @endif </a></span>
-              <span class="fl">下一篇：
-                <a href="@if($next) /{{$path}}/{{$next->id}}.html @else javascript:void(0); @endif">@if($next) {{$next->title}} @else 没有了 @endif </a></span>
-            </div>
-            <div class="nrxq_main3">相关文章</div>
-            <section class="nrxq_main4 pp_sec fix">
-              @foreach($relevant as $k=>$v)
-              <div class="col-sm-4 paddingzhi">
-                <a href="/{{$path}}/{{$v->id}}.html" class="db a1 tc">
-                  <span class="db ovh">
-                    <img src="{{$v->path}}" class="db guodu"></span>
-                  <span class="span1 db one">{{$v->title}}</span></a>
-              </div>
-              @endforeach
-            </section>
-          </div>
-        </div>
-        <div class="nr_R fr">
-          <div class="nrxq_right">
-            <div class="nrxq_main5 fix">
-              <p class="fl">童翼动态</p>
-              <span class="fr">
-                <a href="#">更多</a></span>
-            </div>
-            <div class="nrxq_main6">
-              <div class="nrxq_main6_1">
-                <a href="/dynamic/{{$dynamic[0]->id}}.html">
-                  <img src="{{$dynamic[0]->path}}" class="db guodu"></a>
-              </div>
-              <div class="nrxq_main6_2">
-                <div class="div1">
-                  <a href="/dynamic/{{$dynamic[0]->id}}.html">{{$dynamic[0]->title}}</a></div>
-              </div>
-              <div class="nrxq_main6_3">
-                <ul>
-                  @foreach($dynamic as $k=>$v)
-                      @if($v->id != $dynamic[0]->id)
-                        <li>
-                          <a href="/dynamic/{{$v->id}}.html">{{$v->title}}</a>
-                        </li>
-                      @endif 
-                  @endforeach
-                </ul>
-              </div>
-            </div>
-            
-            <div class="nrxq_main5 fix">
-              <p class="fl">童翼活动</p>
-              <span class="fr">
-                <a href="#">更多</a></span>
-            </div>
-            <div class="nrxq_main6">
-              <div class="nrxq_main6_1">
-                <a href="/activity/{{$activity[0]->id}}.html" >
-                  <img src="{{$activity[0]->path}}" class="db guodu"></a>
-              </div>
-              <div class="nrxq_main6_2">
-                <div class="div1">
-                  <a href="/activity/{{$activity[0]->id}}.html">{{$activity[0]->title}}</a>
-                </div>
-              </div>
-              <div class="nrxq_main6_3">
-                <ul>
-                  @foreach($activity as $k=>$v)
-                      @if($v->id != $activity[0]->id)
-                        <li>
-                          <a href="/activity/{{$v->id}}.html">{{$v->title}}</a>
-                        </li>
-                      @endif
-                  @endforeach
-                </ul>
-              </div>
+    <section class="kc_banner_s" style="">
+      <a href="#" target="_self" class="db">
+        <img src="/homes/picture/bcd2719ea98c41a14ae2b44663b8ff22.jpg"></a>
+    </section>
+    <section class="kc_section_01">
+      <div class="container fix">
+        <form  method="post" action="/partner">
+          <div class="div1 fl">
+            <div class="divv1">
+              <input type="text" name='title' class="select_01 select"  style="width: 100%;"/>
             </div>
           </div>
-        </div>
+          <div class="div2 fl">
+            <input type="submit" class="but_01" value="搜索伙伴"></div>
+        </form>
       </div>
     </section>
+    <section class="container">
+      <section class="kc_section_02 fix">
+      @foreach($partner as $k=>$v)
+        <div class="col-md-4 col-sm-6">
+          <a href="/partners/{{$v->id}}.html"  class="db a1 tc">
+            <span class="db ovh">
+              <img src="{{$v->path}}" class="db guodu"></span>
+            <span class="span1 db one">{{$v->title}}</span>
+            <span class="span2 db one">{{$v->describe}}</span></a>
+        </div>
+      @endforeach
+      </section>
+      <div style="float:right;">{!! $partner->appends($request->only(['list_length','title']))->render() !!} </div>
+      
+    </section>
     @extends('layout.footer')
-   </body>
+  </body>
 </html>
 <script src="/homes/js/ui-select.js"></script>
 <script>$('.ui-select').ui_select();</script>

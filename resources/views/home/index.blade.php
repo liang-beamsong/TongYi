@@ -126,10 +126,10 @@
           });
         });
       };</script>
-  </head>
-  
-  <body>
+</head>
+<body>
      @extends('layout.header')
+     <div style="width: 100%;height:90px;"></div>
     <section class="owl-carousel banner">
       @foreach($carousel as $k=>$v)
       <div class="item">
@@ -151,19 +151,19 @@
       });</script>
     <section class="section_01">
       <div class="title tc container">
-        <span class="span1 db">卓美品致 — 为3-18岁孩子提供
+        <span class="span1 db">童翼品致 — 为3-18岁孩子提供
           <br>英文戏剧教育</span>
         <span class="span2 db fa">Provide pure English drama education
           <br>for children aged 3-18</span></div>
       <div class="container In_map rel">
-        <span class="span1 db tc">卓美将欧美经典英文戏剧课程引进中国
+        <span class="span1 db tc">童翼将欧美经典英文戏剧课程引进中国
           <br />旨在为3-18岁的青少儿提供纯正英文戏剧教育
           <br />在英文戏剧中，释放孩子的天性，绽放自我
           <br />激发各种潜能，发展创造力和想象力
           <br />建立自信心与同理心，拓展国际视野，提升英文口语能力，增强沟通力和团队协作力
-          <br />目前，卓美品致已在北京、上海、重庆、青岛等地拥有12家校区
+          <br />目前，童翼品致已在北京、上海、重庆、青岛等地拥有12家校区
           <br />为中国的青少儿带来了全新的成长方式
-          <bdo class="bdo_01 db">卓美将全球领先的Helen O' Grady
+          <bdo class="bdo_01 db">童翼将全球领先的Helen O' Grady
             <br />英文戏剧教育课程体系引入中国</bdo>1979年创立 &nbsp; 总部在英国 &nbsp;&nbsp;1500家分支机构 &nbsp;
           <br />遍布全球32个国家和地区
           <br />600多万孩子的成长经验 &nbsp;
@@ -309,26 +309,12 @@
     </section>
     <section class="section_06 rel">
       <div class="div_biaoti abs">
-        <span class="span1 guodu b db  xz " data-video="http://www.dreamaker.com.cn/static/upfile/videos/file/20170803/nancy.mp4">名家访谈</span>
-        <span class="span1 guodu b db " data-video="http://www.dreamaker.com.cn/static/upfile/videos/file/20170803/xqhj.mp4">教学环境</span>
-        <span class="span1 guodu b db " data-video="http://www.dreamaker.com.cn/static/upfile/videos/file/20170802/53m.mp4">家长访谈</span>
-        <span class="span2 guodu db" data-video="http://www.dreamaker.com.cn/static/upfile/videos/file/20170803/nancy.mp4">
-          <img src="/homes/picture/tip_03.png" alt="">点击观看视频</span></div>
+          <span class="span2 guodu db" data-video="http://www.dreamaker.com.cn/static/upfile/videos/file/20170803/nancy.mp4"><img src="/homes/picture/tip_03.png" alt="">点击观看视频</span></div>
       <div class="div_tu_q">
         <div class="div1">
           <picture>
             <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170715/6135dca581e2e044a28f86389baad85f.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/c61798ada2d9bb59c860e2b15e18869c.jpg" alt="名家访谈 " title="1" /></picture>
-        </div>
-        <div class="div1">
-          <picture>
-            <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170807/642a245333cb1c60b6c3e2229dd07eb1.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/a512d90d0fb7e1b284af1bf3e997cdb2.jpg" alt="教学环境" title="1" /></picture>
-        </div>
-        <div class="div1">
-          <picture>
-            <source srcset="http://www.dreamaker.com.cn/static/upfile/imgs_new/image/20170807/c6b30a1855106fe94488e5f0a5f7d0ab.jpg" media="(max-width: 767px)">
-              <img src="/homes/picture/0accebe2cffd2d41bf18ac254c18f944.jpg" alt="家长访谈" title="1" /></picture>
+              <img src="/homes/picture/c61798ada2d9bb59c860e2b15e18869c.jpg"  title="1" /></picture>
         </div>
       </div>
       <div class="div_video">
@@ -343,7 +329,7 @@
         <span class="span1 db">合作伙伴</span>
         <span class="span2 db fa">partners</span></div>
       <div class="title_tit tc">
-        <span class="span1 db">2011年至今，北京一线小学先后将卓美品致英文戏剧引入校园，并进行了校本课、课外班、学生剧团等多种尝试，
+        <span class="span1 db">2011年至今，北京一线小学先后将童翼品致英文戏剧引入校园，并进行了校本课、课外班、学生剧团等多种尝试，
           <br>已有50余所合作校，近5000名孩子参加了英文戏剧课程。</span></div>
       <div class="container">
         <div class="div_p ovh">
@@ -407,67 +393,25 @@
               });</script>
           </div>
     </section>
-    <section class="baoming">
-      <div class="container">
-        <div class="div1 fix rel">
-          <!--<b class="b1"><img src="/homes/picture/phone.png" alt="">4006781872 转 1</b>-->
-          <form name="form2" class="registerform2" id="form2" method="post" action="http://www.dreamaker.com.cn/message/saveAjax2">
-            <div class="divv1 fix">
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[mname]" placeholder="请输入姓名！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[age]" placeholder="请输入孩子年龄！"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <input type="text" class="put_public put_01" name="info[tel]" nullmsg="请填写您的手机号" errormsg="请您填写11位手机号" placeholder="填写11位手机号" datatype="m"></div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="div_put">
-                  <div class="select_01 select">
-                    <select class="ui-select" name="info[xiaoqu_id]" style="width: 100%;" datatype="*" nullmsg="请您选择咨询校区">
-                      <option value="">请您选择咨询校区</option>
-                      <option value="19">北京牡丹园校区</option>
-                      <option value="32">北京西直门校区</option>
-                      <option value="21">北京双井校区</option>
-                      <option value="20">北京公主坟校区</option>
-                      <option value="6">北京望京校区</option>
-                      <option value="22">北京金源校区</option>
-                      <option value="23">北京亚运村校区</option>
-                      <option value="9">北京常营校区</option>
-                      <option value="12">上海五角场校区</option>
-                      <option value="14">上海徐家汇校区</option>
-                      <option value="26">上海古北校区</option>
-                      <option value="36">石家庄长安校区</option>
-                      <option value="39">沈阳K11校区</option>
-                      <option value="42">郑州蓝堡湾校区</option>
-                      <option value="27">重庆渝北校区</option>
-                      <option value="28">青岛五四广场校区</option></select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divv2">
-              <div class="div_put2 rel">
-                <input type="text" class="put_public put_02" name="txtCode" datatype="*" nullmsg="请输入验证码" placeholder="请输入验证码">
-                <img src="/homes/picture/6c025acc7e6d46f783e49246d35db143.gif" width="83" height="30" class="abs bm_yzm" onClick="this.src='http://www.dreamaker.com.cn/utils/captcha/'+Math.random();"></div>
-            </div>
-            <span id="msgdemo3" style="margin-top:5px;"></span>
-            <input type="hidden" name="info[from]" value="">
-            <input type="hidden" name="info[url]" value="www.dreamaker.com.cn">
-            <input type="submit" class="put_public but_01" value="立即报名"></form>
-        </div>
-      </div>
-    </section>
     @extends('layout.footer')
     <link rel="stylesheet" href="/homes/css/validform_v5.css" type="text/css" media="all" />
    </body>
 </html>
 <script src="/homes/js/ui-select.js"></script>
 <script>$('.ui-select').ui_select();</script>
+<script>
+console.log('网站开发作者 : 梁歌');
+console.log('委托项目请联系 : QQ  867627588');
+console.log('                VX  867627588');
+console.log('....................................................');
+console.log('......................招对象........................');
+console.log('..................陕西老董(董志宏)..................');
+console.log('.................PHP程序员,经验丰富.................');
+console.log('...........年薪50W起(钱虽然不多,但绝对够骚).........');
+console.log('..................诚招女性对象一名..................');
+console.log('....................长相&年龄不限...................');
+console.log('................有意请联系QQ:244013508..............');
+</script>
 <script type="text/javascript">$(document).ready(function() {
     $(".scrolltop").imgscroll({
       speed: 60,

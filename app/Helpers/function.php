@@ -5,6 +5,14 @@
  */
 function NavigationCall()
 {
+	return DB::table('ty_nav')->limit(6)->get();
+}
+
+/**
+ * 底部导航遍历
+ */
+function BottomNavigation()
+{
 	return DB::table('ty_nav')->get();
 }
 
