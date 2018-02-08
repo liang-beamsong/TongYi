@@ -6,7 +6,7 @@ use Closure;
 use DB;
 use Crypt;
 
-class AdminLoginMiddleware
+class AdminloginMiddleware
 {
     /**
      * Handle an incoming request.
@@ -40,9 +40,7 @@ class AdminLoginMiddleware
 
             return $next($request);
         }else{
-
             return redirect('/admin/login');
-            
         }
 
     }

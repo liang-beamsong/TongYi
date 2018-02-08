@@ -38,6 +38,24 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-sm-3 control-label">所属导航</label>
+                        <?php $num = 1?>
+                        <div class="col-sm-6">
+                            <select class="form-control" name="nid">
+                            @foreach($navlist as $k=>$v)
+                                @if($v->id != 1 && $nav->nid != 0)
+                                 <option value="{{$v->id}}" @if($v->nid == $nav->id) selected @endif>{{$v->name}}</option>
+                                @else
+                                    <?php $num++?>
+                                    @if($num == count($navlist))
+                                     <option value="0" selected>一级栏目</option>
+                                    @endif
+                                @endif
+                            @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-sm-offset-8 col-sm-10">
                             <input type="hidden" name='id' value="{{$nav->id}}">
                             {{csrf_field()}}

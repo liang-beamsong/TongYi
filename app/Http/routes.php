@@ -40,7 +40,7 @@ Route::group(['middleware'=>'adminlogin'], function(){
 	Route::controller('config','Admin\ConfigController');
 
 	Route::controller('links','Admin\LinksController');
-	Route::controller('message','Admin\messageController');
+	Route::controller('message','Admin\MessageController');
 });
 
 /**
@@ -60,8 +60,8 @@ Route::get('show','Home\ShowController@index');
 /**
  * 文章列表栏目
  */
-Route::get('article','Home\CourseController@index');
-Route::post('article','Home\CourseController@index');
+Route::get('article','Home\ArticleController@index');
+Route::post('article','Home\ArticleController@index');
 Route::get('activity','Home\ActivityController@index');
 Route::post('activity','Home\ActivityController@index');
 Route::get('dynamic','Home\DynamicController@index');
@@ -83,6 +83,6 @@ Route::get('partners/{id}.html','Home\ListController@partner');
 /**
  * 前台留言
  */
-Route::post('messages/insert','Home\messageController@insert');
-Route::post('messages/signup','Home\messageController@signup');
+Route::post('messages/insert','Home\MessageController@insert');
+Route::post('messages/signup','Home\MessageController@signup');
 

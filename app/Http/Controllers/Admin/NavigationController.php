@@ -12,7 +12,8 @@ class NavigationController extends Controller
 {
     public function getAdd()
     {
-    	return view('admin.nav.add');
+        $nav = DB::table('ty_nav')->where('nid','0')->get();
+    	return view('admin.nav.add',['nav'=>$nav]);
     }
 
     public function getList()
@@ -25,12 +26,13 @@ class NavigationController extends Controller
     {
     	$id = $request->only(['id']);
     	$data=DB::table('ty_nav')->where('id',$id)->first();
-    	return view('admin.nav.edit',['nav' => $data]);
+        $navlist = DB::table('ty_nav')->where('nid','0')->get();
+    	return view('admin.nav.edit',['nav' => $data,'navlist'=>$navlist]);
     }
 
     public function postUpdate(Request $request)
     {
-    	$data = $request->only(['name','url']);
+    	$data = $request->only(['name','url','nid']);
     	$id = $request->only(['id']);
     	$res= DB::table('ty_nav')->where('id',$id)->update(['name'=>$data['name'],'url'=>$data['url']]);
     	if($res){
@@ -38,5 +40,16 @@ class NavigationController extends Controller
     	}else{
     		 return back()->with('info','修改失败');
     	}
+    }
+
+    public function postInsert(Request $request)
+    {
+        $data = $request->only(['name','url','nid']);
+        $res= DB::table('ty_nav')->insert($data);
+        if($res){
+            return redirect('/nav/list')->with('info','成功');
+        }else{
+             return back()->with('info','修改失败');
+        }
     }
 }

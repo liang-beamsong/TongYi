@@ -50,6 +50,7 @@
                 <tr role="row">
                   <th  aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column ascending" style="width: 50px;text-align: center;">#</th>
                   <th  aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 100px;text-align: center;">标题</th>
+                  <th aria-controls="example" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 50px;text-align: center;">所属分类</th>
                   <th aria-controls="example" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 50px;text-align: center;">关键词</th>
                   <th  aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 150px;text-align: center;">操作</th></tr>
               </thead>
@@ -58,6 +59,11 @@
                         <tr class="even" style="text-align: center;">
                             <td style="width: 50px;">{{$num++}}</td>
                             <td>{{$v->title}}</td>
+                            @foreach($nav as $j=>$x)
+                              @if($x->id == $v->nav_id)
+                                <td>{{$x->name}}</td>
+                              @endif
+                            @endforeach
                             <td>{{$v->keyword}}</td>
                             <td><a href="/article/edit?id={{$v->id}}">修改</a> | <a href="/article/dele?id={{$v->id}}">删除</a></td>
                         </tr>

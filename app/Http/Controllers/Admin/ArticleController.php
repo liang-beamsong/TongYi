@@ -12,7 +12,7 @@ class ArticleController extends Controller
 {
     public function getAdd()
     {
-        $data=DB::table('ty_nav')->get();
+        $data=DB::table('ty_nav')->where('nid','2')->get();
     	return view('admin.article.add',['nav'=>$data]);
     }
 
@@ -25,12 +25,13 @@ class ArticleController extends Controller
               }
             })->orderBy('id','desc')->paginate($request->input('list_length',10));
         $num = 1;
-    	return view('admin.article.list',['article' => $data,'num'=>$num,'request' => $request]);
+        $nav=DB::table('ty_nav')->get();
+    	return view('admin.article.list',['article' => $data,'nav'=>$nav,'num'=>$num,'request' => $request]);
     }
 
     public function getEdit(Request $request)
     {
-        $data=DB::table('ty_nav')->get();
+        $data=DB::table('ty_nav')->where('nid','2')->get();
         $id = $request->only(['id']);
         $res = DB::table('ty_article')->where('id',$id)->first();
     	return view('admin.article.edit',['nav'=>$data,'article' => $res]);

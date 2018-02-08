@@ -37,6 +37,18 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-sm-1 control-label">选择分类</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="nav_id">
+                            @foreach($nav as $k=>$v)
+                                @if($v->id != 1)
+                                 <option value="{{$v->id}}">{{$v->name}}</option>
+                                @endif
+                            @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="col-sm-1 control-label">缩略图</label>
                         <div class="col-sm-10">
                             <input type="file"  name="path" id="input1" style="margin-top: 3px;">
